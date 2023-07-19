@@ -3,9 +3,10 @@
 
 == 1.1 Introduction to this module
 
-This module shows how developers can build, deploy and manage applications using Red Hat Developer Hub. 
+This module shows how developers can build, deploy and manage applications using Red Hat Developer Hub. Red Hat Developer Hub will allow you to perform the same previous activities with an accelerated approach by reducing developer friction and improving time to market.
+
 The module starts with an overview of the product, followed by the product architecture and a tour of the main functionalities.
-You will implement two use cases, from maintaining a new application that requires bug fixing to modernize a legacy application.
+You will implement two use cases, from *maintaining a new application* that requires bug fixing to *modernize a legacy application*.
 
 == 1.2 Application Overview
 
@@ -21,10 +22,10 @@ https://developers.redhat.com/products/developer-hub/overview[Red Hat OpenShift 
 
 image::rhdevhub_overview.png[]
 
-* Software Catalog: a centralized place to keep software metadata for quick discovery and access.
-* Components: individual software pieces representing an application deployed through Red Hat Developer Hub.
-* Software Templates: will be used to create components to bring the applications into the platform according to his runtime and specific configurations.
-* Plugins: Plugins will allow customizations on the Red Hat Developer Hub to include new capabilities such as CI/CD and security insights.
+* *Software Catalog*: a centralized place to keep software metadata for quick discovery and access.
+* *Components*: individual software pieces representing an application deployed through Red Hat Developer Hub.
+* *Software Templates*: will be used to create components to bring the applications into the platform according to his runtime and specific configurations.
+* *Plugins*: Plugins will allow customizations on the Red Hat Developer Hub to include new capabilities such as CI/CD and security insights.
 
 == 2.3 Access Red Hat Developer Hub
 
