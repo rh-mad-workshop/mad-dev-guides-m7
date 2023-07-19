@@ -8,8 +8,10 @@ This module shows how developers can build, deploy and manage applications using
 The module starts with an overview of the product, followed by the product architecture and a tour of the main functionalities.
 You will implement two use cases, from *maintaining a new application* that requires bug fixing to *modernize a legacy application*.
 
-== 1.2 Application Overview
+== 1.2 Globex’s Digital Transformation Journey
+Globex, a fictitious retail company, has completed the modernization of their existing retail e-commerce web application as part of their modernization journey. A schematic overview of the current state of the application as show below:
 
+image::globex-phase1.png[width=60%]
 
 
 == 2 Red Hat Developer Hub Overview
