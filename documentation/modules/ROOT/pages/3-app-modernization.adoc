@@ -1,0 +1,9 @@
+= 3. Application Migration - 25 minutes
+:imagesdir: ../assets/images
+
+== Goals of this lab
+
+The goal of this exercise 
+== Summary
+
+Congratulations! You have now successfully xxx.

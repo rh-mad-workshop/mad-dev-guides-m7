@@ -1,0 +1,14 @@
+= 1. Introduction and Overview - 5 minutes
+:imagesdir: ../assets/images
+
+[NOTE]
+====
+If you've already completed the introduction exercise in the previous module, feel free to skip xx. This exercise is meant to introduce you to the environment and confirm your services are running correctly.
+====
+
+
+== Congratulations!
+
+You have now successfully learned about the architecture of the application and confirmed your workshop environment.
+
+In the next step, you'll xxx.

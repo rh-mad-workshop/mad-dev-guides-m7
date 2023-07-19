@@ -1,0 +1,14 @@
+= 2. Application Development - 30 minutes
+:imagesdir: ../assets/images
+
+== Goals of this lab
+
+
+
+
+## Congratulations!
+
+You have successfully xx this app and now ready to deploy to OpenShift, *congratulations!*
+
+
+
