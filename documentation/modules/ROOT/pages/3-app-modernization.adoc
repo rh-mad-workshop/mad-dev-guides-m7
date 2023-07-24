@@ -3,7 +3,16 @@
 
 == Goals of this lab
 
-The goal of this exercise 
-== Summary
+The goal of this lab is to learn how developers can modernize their applications quickly understanding required source code changes for modernization and move them into OpenShift as containers with Red Hat Migration Application Toolkit and Red Hat Developer Hub. Red Hat Developer Hub is already configured with OpenShift Pipelines and Gitea and Red Hat Migration Application Toolkit.
 
-Congratulations! You have now successfully xxx.
+You will:
+
+* View Tech Docs
+* Migrating/Refactor a Java Application (SpringBoot) with Migration Toolkit Application inside Developer Hub
+* Create a component for the migrated Application using existing templates 
+
+
+
+## Congratulations!
+
+You have successfully xx this app and now ready to deploy to OpenShift, *congratulations!*

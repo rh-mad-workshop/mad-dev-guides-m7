@@ -69,7 +69,7 @@ On the main screen, you will see the Quick Access links:
 
 At your left, the Red Hat Developer Hub menu:
 
-image::intro/rhdevhub_menu.png[]
+image::intro/rhdevhub_menu.png[width=65%]
 
 Navigate each of the menu items to explore the different solutions:
 

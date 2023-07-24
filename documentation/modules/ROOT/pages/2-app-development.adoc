@@ -3,7 +3,14 @@
 
 == Goals of this lab
 
+The goal of this lab is to learn how developers can build, deploy and manage applications using Red Hat Developer Hub. Red Hat Developer Hub is already configured with OpenShift Pipelines and Gitea.
 
+You will:
+
+* Create a component for a NodeJS Application using existing templates 
+* Overview of application details, exploring topology view, pipelines and github issues 
+* Fix a github issue using Red Hat Dev Spaces with Explore software catalog to integrate with other microservices (openAPI) 
+* Review Metrics
 
 
 ## Congratulations!
