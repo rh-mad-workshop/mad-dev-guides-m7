@@ -43,3 +43,6 @@ Authorize the requested permissions if needed:
 
 == 2.4 Quick tour of Red Hat Developer Hub
 
+## Congratulations!
+
+You have successfully completed the introduction module and learned about Red Hat Developers. In the following modules, you will experience at first hand the value added to the business; *congratulations!*
