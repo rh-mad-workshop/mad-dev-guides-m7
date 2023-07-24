@@ -43,6 +43,32 @@ Enter your *username* for the *namespace* and *user:<REPLACE_WITH_YOUR_USER>* fo
 
 image::appdev/task-activity.png[width=100%]
 
+== 2.3. Explore the generated elements
+
+=== 2.3.1 Review Source Code Repository
+Click on *Source Code Repository*. It will redirect you to the Gitea repository with the frontend application.
+
+=== 2.3.2 Review the Pipeline created
+Click on *Pipeline status* . It will redirect you to the OpenShift web console under the Pipeline section.
+
+=== 2.3.3 Open Component in catalog
+Click on *Open Component in catalog*. It will redirect to the component overview page. 
+
+image::appdev/rhdevhub_component_overview.png[width=100%]
+
+== 2.4 Explore the component view
+
+=== 2.4.1 Explore the topology view
+Click on *TOPOLOGY*. You will be able to see all applications deployed in the topology view. 
+. Click on the blue circle. You can see the Pod (application running) and access all the resources and detailed information. 
+
+image::appdev/rhdevhub_component_detail.png[width=100%]
+
+=== 2.4.2 Explore the issues
+Click on *ISSUES*. You will be able to see any GitHub issues associated with the application. 
+
+
+
 ## Congratulations!
 
 You have successfully xx this app and now ready to deploy to OpenShift, *congratulations!*
