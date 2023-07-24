@@ -11,7 +11,7 @@ You will implement two use cases, from *maintaining a new application* that requ
 == 1.2 Globex’s Digital Transformation Journey
 Globex, a fictitious retail company, has completed the modernization of their existing retail e-commerce web application as part of their modernization journey. A schematic overview of the current state of the application as show below:
 
-image::globex-phase1.png[width=60%]
+image::intro/globex-phase1.png[width=60%]
 
 As part of the modernization process, Globex is looking to accelerate the software development lifecycle to reduce time to market with best practices. Red Hat Developer Hub will allow Globex to accomplish this request. In this Lab, you will perform a similar use case you have done in previous modules to experience the developer experience and value-added for developers.
 
@@ -23,7 +23,7 @@ https://developers.redhat.com/products/developer-hub/overview[Red Hat OpenShift 
 
 == 2.2 Red Hat Developer Hub Architecture
 
-image::rhdevhub_overview.png[]
+image::intro/rhdevhub_overview.png[]
 
 * *Software Catalog*: a centralized place to keep software metadata for quick discovery and access.
 * *Components*: individual software pieces representing an application deployed through Red Hat Developer Hub.
@@ -34,14 +34,52 @@ image::rhdevhub_overview.png[]
 
 Red Hat Developer Hub has already been installed and configured in the workshop environment.
 
-To get started, access xxx
+Access the application launcher (9 dots) at your right and click on Red Hat Developer Hub, as the figure shows.
+
+image::intro/menu.png[]
+
 
 Login with your Gitea credentials:
  
-Authorize the requested permissions if needed:
+image::intro/login.png[]
 
+Authorize the requested permissions if needed.
+
+image::intro/authorize.png[]
 
 == 2.4 Quick tour of Red Hat Developer Hub
+Welcome to Red Hat Developer Hub!
+
+You should now see the red sign with the "Welcome to Red Hat Developer Hub!" on your screen.
+
+On the main screen, you will see the Quick Access links:
+
+* Community: resources to connect with the community from websites, blogs, Slack, and videos.
+
+* Developer tools: website links to developer tools.
+
+* CI/CD tools: tbd
+
+* OpenShift clusters: tbd
+
+* Monitoring tools: tbd
+
+* Security tools: tbd
+
+
+At your left, the Red Hat Developer Hub menu:
+
+image::intro/rhdevhub_menu.png[]
+
+Navigate each of the menu items to explore the different solutions:
+
+* Catalog is the Software catalog available.
+* APIs available for developers to consume.
+* Docs: customer documentation that developers and DevOps can access as part of the company guidelines and best practices.
+* Learning Paths: developers and DevOps can utilize customer learning paths to learn and advance their skills.
+* Create: Developers can build and deploy their applications by creating a component by choosing a pre-defined template. Next, Lab will explore this feature. 
+* Tech Radar: Company radar to understand their modernization technology landscape.
+
 
 ## Congratulations!
 
