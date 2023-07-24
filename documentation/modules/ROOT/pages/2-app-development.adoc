@@ -67,6 +67,9 @@ image::appdev/rhdevhub_component_detail.png[width=100%]
 === 2.4.2 Explore the issues
 Click on *ISSUES*. You will be able to see any GitHub issues associated with the application. 
 
+There is an issue to be fixed:
+
+image::appdev/rhdevhub_git_issue.png[width=80%]
 
 
 ## Congratulations!
