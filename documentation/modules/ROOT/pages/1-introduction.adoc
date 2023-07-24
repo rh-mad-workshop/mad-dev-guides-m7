@@ -8,20 +8,13 @@ This module shows how developers can build, deploy and manage applications using
 The module starts with an overview of the product, followed by the product architecture and a tour of the main functionalities.
 You will implement two use cases, from *maintaining a new application* that requires bug fixing to *modernize a legacy application*.
 
-== 1.2 Globex’s Digital Transformation Journey
-Globex, a fictitious retail company, has completed the modernization of their existing retail e-commerce web application as part of their modernization journey. A schematic overview of the current state of the application as show below:
+== 1.2 Red Hat Developer Hub Overview
 
-image::intro/globex-phase1.png[width=60%]
-
-As part of the modernization process, Globex is looking to accelerate the software development lifecycle to reduce time to market with best practices. Red Hat Developer Hub will allow Globex to accomplish this request. In this Lab, you will perform a similar use case you have done in previous modules to experience the developer experience and value-added for developers.
-
-== 2 Red Hat Developer Hub Overview
-
-== 2.1 What is Red Hat Developer Hub?
+=== 1.2.1 What is Red Hat Developer Hub?
 
 https://developers.redhat.com/products/developer-hub/overview[Red Hat OpenShift Developer Hub^] is an enterprise-grade, open system for building developer portals, containing a supported and opinionated framework. Red Hat Developer Hub helps reduce friction and frustration for engineering teams while boosting their productivity and increasing their organization's competitive advantages.
 
-== 2.2 Red Hat Developer Hub Architecture
+=== 1.2.2 Red Hat Developer Hub Architecture
 
 image::intro/rhdevhub_overview.png[]
 
@@ -30,14 +23,13 @@ image::intro/rhdevhub_overview.png[]
 * *Software Templates*: will be used to create components to bring the applications into the platform according to his runtime and specific configurations.
 * *Plugins*: Plugins will allow customizations on the Red Hat Developer Hub to include new capabilities such as CI/CD and security insights.
 
-== 2.3 Access Red Hat Developer Hub
+=== 1.2.3 Access Red Hat Developer Hub
 
 Red Hat Developer Hub has already been installed and configured in the workshop environment.
 
 Access the application launcher (9 dots) at your right and click on Red Hat Developer Hub, as the figure shows.
 
 image::intro/menu.png[]
-
 
 Login with your Gitea credentials:
  
@@ -47,7 +39,7 @@ Authorize the requested permissions if needed.
 
 image::intro/authorize.png[]
 
-== 2.4 Quick tour of Red Hat Developer Hub
+=== 1.2.4 Quick tour of Red Hat Developer Hub
 Welcome to Red Hat Developer Hub!
 
 You should now see the red sign with the "Welcome to Red Hat Developer Hub!" on your screen.
