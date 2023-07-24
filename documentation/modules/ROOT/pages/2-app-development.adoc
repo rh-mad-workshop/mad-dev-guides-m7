@@ -12,6 +12,36 @@ You will:
 * Fix a github issue using Red Hat Dev Spaces with Explore software catalog to integrate with other microservices (openAPI) 
 * Review Metrics
 
+=== 2.1 Globex’s Digital Transformation Journey
+Globex, a fictitious retail company, has completed the modernization of their existing retail e-commerce web application as part of their modernization journey. A schematic overview of the current state of the application as show below:
+
+image::intro/globex-phase1.png[width=60%]
+
+As part of the modernization process, Globex is looking to accelerate the software development lifecycle to reduce time to market with best practices. The first step is to build and deploy the NodeJS application to OpenShift.
+
+== 2.2. Build and Deploy your application with one click
+
+Yes, with only one click, you can build and deploy your application in OpenShift.
+Follow the steps below:
+
+1. Login in Red Hat Developer Hub (if disconnected from the previous section)
+2. Click the Create option from the Red Hat Developer Hub menu at your left.
+3. Review the available templates:
+
+image::appdev/templates.png[width=100%]
+
+4. Select the template "XX NodeJS":
+5. Follow the example below to complete the required information:
+
+image::appdev/component_info.png[width=100%]
+
+**Notes**: 
+Enter your *username* for the *namespace* and *user:<REPLACE_WITH_YOUR_USER>* for the *owner* input.
+
+6. Click on the *Create* button.
+7. Look at the task activity on the same screen. You should see all the activities completed successfully.
+
+image::appdev/task-activity.png[width=100%]
 
 ## Congratulations!
 
