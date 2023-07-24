@@ -13,6 +13,7 @@ Globex, a fictitious retail company, has completed the modernization of their ex
 
 image::globex-phase1.png[width=60%]
 
+As part of the modernization process, Globex is looking to accelerate the software development lifecycle to reduce time to market with best practices. Red Hat Developer Hub will allow Globex to accomplish this request. In this Lab, you will perform a similar use case you have done in previous modules to experience the developer experience and value-added for developers.
 
 == 2 Red Hat Developer Hub Overview
 
