@@ -11,7 +11,30 @@ You will:
 * Migrating/Refactor a Java Application (SpringBoot) with Migration Toolkit Application inside Developer Hub
 * Create a component for the migrated Application using existing templates 
 
+== 3.1. Understand how to modernize your applications
+You have received a new request to modernize one of the backend applications. For this task you will use link:https://developers.redhat.com/products/mta/overview[Red Hat Migration Toolkit for Applications].
 
+3.1. Login in Red Hat Developer Hub (if disconnected from the previous section)
+
+
+== 3.2. Start your modernization changes in your applications
+3.2. Explore Migration Toolkit for Applications in Red Hat Developer Hub
+
+tbd:addimage
+
+3.3. Access Red Hat Migration Toolkit for Applications from Red Hat Developer Hub
+
+[NOTE]
+====
+You can also log in to the Gitea repository with the following credentials.
+
+* Username - `%USERID%`
+* Password - `{openshift-password}`
+====
+
+tbd:addimage
+
+4. Access the xx
 
 
 ## Congratulations!
