@@ -61,17 +61,28 @@ On the main screen, you will see the Quick Access links:
 
 At your left, the Red Hat Developer Hub menu:
 
-image::intro/rhdevhub_menu.png[width=65%]
 
-Navigate each of the menu items to explore the different solutions:
 
-* Catalog is the Software catalog available.
-* APIs available for developers to consume.
+*Navigate each of the menu items to explore the different solutions:*
+
+====
+
+[.float-group]
+--
+image:intro/rhdevhub_menu.png[width=65%, float=left]  
+
+
+
+* Catalog is the Software catalog available 
+
+* APIs available for developers to consume
 * Docs: customer documentation that developers and DevOps can access as part of the company guidelines and best practices.
 * Learning Paths: developers and DevOps can utilize customer learning paths to learn and advance their skills.
 * Create: Developers can build and deploy their applications by creating a component by choosing a pre-defined template. Next, Lab will explore this feature. 
 * Tech Radar: Company radar to understand their modernization technology landscape.
 
+--
+====
 
 ## Congratulations!
 
