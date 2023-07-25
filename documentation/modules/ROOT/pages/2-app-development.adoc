@@ -22,26 +22,29 @@ As part of the modernization process, Globex is looking to accelerate the softwa
 == 2.2. Build and Deploy your application with one click
 
 Yes, with only one click, you can build and deploy your application in OpenShift.
+
 Follow the steps below:
 
 1. Login in Red Hat Developer Hub (if disconnected from the previous section)
-2. Click the Create option from the Red Hat Developer Hub menu at your left.
+2. Click the Create option from the Red Hat Developer Hub menu at your left (Step 1 in the image).
 3. Review the available templates:
 
 image::appdev/templates.png[width=100%]
 
-4. Select the template "XX NodeJS":
+4. Select the template "XX NodeJS" by clicking on *CHOOSE* (Step 2 in the image).:
 5. Follow the example below to complete the required information:
 
 image::appdev/component_info.png[width=100%]
 
 **Notes**: 
-Enter your *username* for the *namespace* and *user:<REPLACE_WITH_YOUR_USER>* for the *owner* input.
+Enter your *username* for the *namespace* and *user:<REPLACE_WITH_YOUR_USER>* for the *owner* input. In each step click on the Next button.
 
 6. Click on the *Create* button.
 7. Look at the task activity on the same screen. You should see all the activities completed successfully.
 
 image::appdev/task-activity.png[width=100%]
+
+You will explore the three elements below.
 
 == 2.3. Explore the generated elements
 
@@ -56,11 +59,14 @@ Click on *Open Component in catalog*. It will redirect to the component overview
 
 image::appdev/rhdevhub_component_overview.png[width=100%]
 
+
 == 2.4 Explore the component view
 
 === 2.4.1 Explore the topology view
-Click on *TOPOLOGY*. You will be able to see all applications deployed in the topology view. 
-. Click on the blue circle. You can see the Pod (application running) and access all the resources and detailed information. 
+1. Click on *TOPOLOGY*. You will be able to see all applications deployed in the topology view. 
+
+2. Click on the *blue circle*. 
+3. A new window opens at your right, and you can see the Pod (application running) and access *Resources* and *Details* of your application. 
 
 image::appdev/rhdevhub_component_detail.png[width=100%]
 
