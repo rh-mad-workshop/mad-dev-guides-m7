@@ -70,13 +70,42 @@ image::appdev/rhdevhub_component_overview.png[width=100%]
 
 image::appdev/rhdevhub_component_detail.png[width=100%]
 
-=== 2.4.2 Explore the issues
-Click on *ISSUES*. You will be able to see any GitHub issues associated with the application. 
+=== 2.5 Fix an issue reported about the application
+Red Hat Developer Hub is a single pane of glass that allows you to access all the tools and information for your app from one single place. 
+
+1. Look at the Git issues by clicking on *ISSUES*. 
+2. You will be able to see any GitHub issues associated with the application. 
 
 There is an issue to be fixed:
 
 image::appdev/rhdevhub_git_issue.png[width=80%]
 
+3. From the Red Hat Developer Hub component view access OpenShift Dev Spaces to make the necessary source code changes.
+
+image::appdev/rhdevhub_devspaces.png[width=80%]
+
+4. Log in into OpenShift Dev Spaces:
+
+4.1 Click on the *Login* button:
+image::appdev/rhdevhub_devspaces_login.png[width=80%]
+
+4.2 Select gitea option:
+
+4.3 Authorize the access by click on "Allow selected permissions"
+
+image::appdev/rhdevhub_devspaces_authorize.png[width=80%]
+
+4.4 Authorize the user access. Follow the next steps to continue the authorization of OpenShift Dev Spaces into Gitea.
+
+4.5 Wait for your Dev Spaces workspace to load. This can take a few seconds. You will see a loading screen while the workspace is being provisioned, where Dev Spaces is creating a workspace based on a default devfile, which can be customized to include your tools and configuration.
+
+4.6 Confirm the access by clicking "Yes, I trust the authors" to open the code editor with your source code repository.
+
+image::appdev/rhdevhub_devspaces_authorize_author.png[width=80%]
+
+4.7
+
+//TBD add code snippet showing code changes needed.
 
 ## Congratulations!
 
