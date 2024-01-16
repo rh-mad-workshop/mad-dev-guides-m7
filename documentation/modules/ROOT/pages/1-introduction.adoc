@@ -66,27 +66,31 @@ At your left, the Red Hat Developer Hub menu:
 
 *Navigate each of the menu items to explore the different solutions:*
 
-====
+
 
 [.float-group]
 --
-image:intro/rhdevhub_menu.png[width=65%, float=left]  
+image:intro/rhdevhub_menu.png[width=45%, float=left]  
 
 
 * Catalog is the Software catalog available.  
 * APIs available for developers to consume
 * Docs: customer documentation that developers and DevOps can access as part of the company guidelines and best practices.
 * Learning Paths: developers and DevOps can utilize customer learning paths to learn and advance their skills.
+
 ** Explore the Learning Path: *Developing on OpenShift*
+
 image:intro/learning_paths_explore.png[width=65%, float=left]  
 
+--
 * Create: Developers can build and deploy their applications by creating a component by choosing a pre-defined template. Next, Lab will explore this feature. You will spend most of your time during this module on this section.
 * Tech Radar: Company radar to understand their modernization technology landscape. This information will be updated by each company.
+
+
 image:intro/tech_radar.png[width=65%, float=left]  
 
---
-====
 
-## Congratulations!
+
+*Congratulations!*
 
 You have completed the introduction module and learned about Red Hat Developer Hub. In the following modules, you will experience firsthand the value added to the business by simplifying the developer experience.
