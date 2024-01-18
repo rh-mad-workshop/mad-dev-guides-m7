@@ -1,0 +1,6 @@
+name: mad-dev-guides-m7
+title: Module 7 - Accelerating Software development with RH Developer Hub
+version: main
+nav:
+  - modules/ROOT/nav.adoc
+start_page: ROOT:1-introduction.adoc

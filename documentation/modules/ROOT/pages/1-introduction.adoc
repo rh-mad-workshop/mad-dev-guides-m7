@@ -1,0 +1,108 @@
+= 1. Introduction and Overview - 10 minutes
+:imagesdir: ../assets/images
+
+== 1.1 Introduction to this module
+
+This module shows how developers can build, deploy, and manage applications using Red Hat Developer Hub. Red Hat Developer Hub will allow you to perform the same previous activities with an accelerated approach by reducing developer friction and improving time to market.
+
+The module starts with the product overview, followed by its architecture and a tour of the main functionalities. 
+You will implement two use cases, from *maintaining a new application* that requires bug fixing to *modernizing a legacy application*.
+
+== 1.2 Red Hat Developer Hub Overview
+
+=== 1.2.1 What is Red Hat Developer Hub?
+
+https://developers.redhat.com/rhdh[Red Hat Developer Hub^] is an enterprise-grade, open system for building developer portals containing a supported and opinionated framework. Red Hat Developer Hub helps reduce friction and frustration for engineering teams while boosting their productivity and increasing their organization's competitive advantages. Red Hat Developer Hub is based on the upstream project https://backstage.spotify.com/[Backstage^] 
+
+Red Hat Developer Hub can build and deploy applications on the hybrid cloud supporting diverse infrastructure such as cloud services and on-prem.
+
+=== 1.2.2 Red Hat Developer Hub Architecture
+
+image::intro/red_hat_developer_hub_assets.png[]
+
+* *Software Catalog*: a centralized place to keep software metadata for quick discovery and access.
+* *Components*: individual software pieces representing an application deployed through Red Hat Developer Hub.
+* *Software Templates*: will be used to create components to bring the applications into the platform according to his runtime and specific configurations.
+* *Plugins*: Plugins will allow customizations on the Red Hat Developer Hub to include new capabilities such as CI/CD and security insights.
+
+=== 1.2.3 Access Red Hat Developer Hub
+
+Red Hat Developer Hub has already been installed and configured in the workshop environment.
+
+To get started, access https://https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^]
+
+Login with your OpenShift credential:
+
+ * *Username*: `%USERID%`
+ * *Password*: `{openshift-password}`
+
+Red Hat Developer Hub is already configured with https://access.redhat.com/products/red-hat-single-sign-on/[Red Hat Single Sign On^]. Login with your Gitea credentials:
+ 
+image::intro/authentication.png[]
+
+=== 1.2.4 Quick tour of Red Hat Developer Hub
+*Welcome to Red Hat Developer Hub!*
+
+You should now see the red sign with the "Welcome to Red Hat Developer Hub!" on your screen.
+
+image::intro/welcome.png[]
+
+On the main screen, you will see the *Quick Access* section:
+
+*Note*: The following links are pre-defined and can be configured and updated.
+
+* Community: resources to connect with the community from websites, blogs, Slack, and videos.
+
+* Developer tools: website links to developer tools.
+
+* CI/CD tools: From ArgoCD to Quay
+
+* OpenShift clusters: OpenShift cluster
+
+* Monitoring tools: Grafana
+
+* Security tools: Keycloak
+
+
+At your left, the Red Hat Developer Hub menu:
+
+
+*Navigate each of the menu items to explore the different solutions:*
+
+
+[.float-group]
+--
+image:intro/rhdevhub_menu.png[width=45%, float=left]  
+
+* Catalog is the Software catalog available.  
+* APIs available for developers to consume
+* Docs: customer documentation that developers and DevOps can access as part of the company guidelines and best practices.
+* Learning Paths: developers and DevOps can utilize customer learning paths to learn and advance their skills.
+
+** Explore the Learning Path: *Developing on OpenShift*
+
+image:intro/learning_paths_explore.png[width=65%, float=left]  
+
+--
+
+* Tech Radar: Company radar to understand their modernization technology landscape. This information will be updated by each company.
+
+
+image:intro/tech_radar.png[width=65%, float=left] 
+
+
+* Create: Developers can build and deploy their applications by creating a component by choosing a pre-defined template. You will spend most of your time during this module on this feature.
+
+image:intro/software_templates_all.png[width=65%, float=left]   
+
+Each Software Template is already built based on Application features such as Quarkus, Spring Boot, and Angular. The templates are composed of everything that is required for an application to be built, deployed and managed in *OpenShift*:
+
+- Application Source code
+- Application Pipelines based on *OpenShift Pipelines*
+- Application Manifests using GitOps approach with *OpenShift GitOps* and templates with *Helm Charts*.
+
+Software Templates are built based on best practices to create a repeatable process for developers.
+
+*Congratulations!*
+
+You have completed the introduction module and learned about Red Hat Developer Hub. In the following modules, you will experience firsthand the value added to the business by simplifying the developer experience.

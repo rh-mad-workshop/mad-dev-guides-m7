@@ -1,0 +1,92 @@
+# Modern Application Development Dev Track - Module 2
+:experimental:
+:imagesdir: documentation/modules/ROOT/assets/images
+
+## Overview
+
+|===
+|| 
+
+|Audience Experience Level
+|Beginner
+
+|Average Time to Complete	
+|60 minutes
+|===
+
+This module shows how developers can build, deploy and manage their applications using link:https://developers.redhat.com/products/developer-hub/overview[Red Hat Developer Hub]. Developers will follow two use cases from maintaining a new application that requires bug fixing to modernizing a legacy application. Developers will accelerate their software development by reducing the container learning curve and the complexity of managing different technologies by adopting Developer Hub as the Developer Portal to their daily activities when building and deploying their container image.
+
+
+== Developer Challenges
+* Learning multiple technologies besides their software tools
+* Working on repetitive tasks when automation and best practices are not implemented
+* Spending time when lack of patterns and guidelines are not implemented
+* Context switching between a diverse number of tools 
+
+== Goal of the module
+* The goal of this module is to explore Internal Developer
+* Portals for developers to show the different use cases and their value in their software development.
+* Show the Red Hat Developer Hub capabilities:
+* Single pane of glass to increase engineering productivity
+* Self-service with guardrails for cloud-native development
+* Simplified onboarding with customizable and repeatable software templates
+* Access to system architecture and learning paths
+* Open-source innovation with stability, support, and reliability
+* Best practices with GitOps and automation
+* Real-time view of application and application health
+
+## Technology Stack
+
+* Red Hat Runtimes (Quarkus)
+* Red Hat Developer Hub 
+* OpenShift Pipelines
+* OpenShift GitOps
+* Red Hat Dev Spaces
+* Application Topology
+* GitLab
+
+## Documentation
+
+This workshop is based on link:https://antora.org/[Antora] and link:https://github.com/redhat-scholars/courseware-template[Red Hat scholars template] to build HTML based tutorials.
+
+
+### Lab Parameters
+
+This lab supports both link:site.yml#L17[Antora variables] than query parameters. Query params makes the workshop content dynamic, like URLs specific for your cluster to copy and paste.
+
+NOTE: In the table above, CRC and Playground links use them.
+
+Here's the list of all query params used (they are all optional, but generated links won't work unless at least `CLUSTER_SUBDOMAIN` is set):
+
+[%header,cols=2*] 
+|===
+|PARAM
+|Description
+
+|`CLUSTER_SUBDOMAIN`
+|The subdomain for your OpenShift cluster in the form `apps.<cluster_name>.<base_domain>`, e.g. `apps.openshift.mydomain.tld`
+
+|`USERNAME`
+| The username of your OpenShift cluster
+
+|===
+
+Example [Dev Mode]:
+
+http://localhost:3000/mad-dev-guides-m7/main/1-introduction.html?USERID=user1&SUBDOMAIN=cluster-8s5ss.sandbox701.opentlc.com&TOMCATIP=150.240.99.53
+
+## Deploy to OpenShift
+
+[.console-input]
+[source,bash]
+----
+oc new-app  https://github.com/RedHat-Middleware-Workshops/mad-dev-guides-m7.git --strategy=docker
+
+oc create route edge mad-dev-guides-m7 --service=mad-dev-guides-m7
+----
+
+## Contributing
+
+Please refer to the link:CONTRIBUTING.adoc#contributing-guide[how to contribute] on how you can contribute to the tutorial.
+
+ 

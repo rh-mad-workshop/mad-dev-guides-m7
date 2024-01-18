@@ -1,0 +1,247 @@
+= 2. Application Migration - 20 minutes
+:imagesdir: ../assets/images
+
+== Goals of this lab
+
+This lab aims to learn how developers can modernize their applications quickly by moving them into the OpenShift Application Platform with Red Hat Developer Hub. Red Hat Developer Hub is already configured with Red Hat Single Sign On, OpenShift Pipelines, OpenShift GitOps, and GitLab. In this section you will migrate all the backend microservices that are part of the Cool Store Application with just a few clicks using Red Hat Developer Hub.
+
+*Module goals*:
+
+* Create a component for a *Java Quarkus Application* using existing *software templates* 
+* Overview of application details, exploring topology view, pipelines information in RHDH.
+* Overview of source code repository created.
+* Create a component for a *Java Spring Application* using existing *software templates* 
+* Overview of application details, exploring topology view, pipelines information from RHDH to OpenShift.
+
+== 2.1 Globex’s Digital Transformation Journey
+Globex, a fictitious retail company, has completed the modernization of its existing retail e-commerce web application as part of its modernization journey.
+
+As part of the modernization process, Globex is looking to accelerate the software development lifecycle with best practices to reduce time to market.  
+
+*Note*:The following services have an embedded database perfect for development. You do not need to set up the database for this lab.
+
+== 2.2 Move a Java Quarkus application: Inventory
+
+* Access the Red Hat Developer Hub UI, https://https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^]
+
+Login with your OpenShift credential:
+
+    ** *Username*: `%USERID%`
+    ** *Password*: `{openshift-password}`
+
+=== 2.2 Use Software Templates to build and deploy your first Java Quarkus application
+
+* From the left menu, click on *Create*:
+
+* Select the *Quarkus Backend Application* Template:
+
+image:module2/software_templates_quarkus.png[width=65%]  
+
+Follow the next steps to create a component based on the pre-defined Software Templates:
+
+*Step 1* - Provide information about the GitLab location :
+
+* *Repo Host*: is the GitLab domain already installed in OpenShift. Red Hat Developer Hub will use this input data to upload the source repository and manifests.
+
+** ONLY Replace the *xx* with the OpenShift domain:
+image:module2/st_gitlab_info.png[width=65%]  
+
+*Sample*: gitlab-gitlab.apps.cluster-jz5bm.sandbox2375.opentlc.com
+
+* ONLY Replace the *xx* with the OpenShift domain:
+image:module2/st_gitlab_info.png[width=65%]  
+
+* *Repo Group*: is the GitLab organization already configured. Red Hat Developer Hub will use this input data to upload the source repository and manifests.
+
+* Click on *Next Step*
+
+*Step 2* - Provide information about the GitLab location :
+
+*Cluster Id*: is the OpenShift domain. Red Hat Developer Hub will use this input data to build and deploy the application.
+
+** Replace the *xx* with the OpenShift domain:
+image:module2/st_component_clusterid.png[width=65%]  
+
+*Sample*: .apps.cluster-jz5bm.sandbox2375.opentlc.com
+
+* *Namespace*:  is the OpenShift namespace. Red Hat Developer Hub will use this input data to build and deploy the application in that namespace.
+
+** Replace the *N* with the user number:
+image:module2/st_component_namespace.png[width=65%]  
+
+ Your namespace will be *rhdhub-*`%USERID%`.
+
+*Note*: Each lab participant is already assigned a unique namespace to be used for all the applications. Each application will have a shared identification based on your user name. 
+
+* *Owner*: The owner is your user ID. Red Hat Developer Hub will use this input data in the build and deployment process.
+
+** Replace the *N* with the user:
+image:module2/st_component_owner.png[width=65%]  
+
+ Your user will be `%USERID%`.
+
+* Click on *Next Step*
+
+*Step 3* - Provide Build information:
+
+* *Image Host*: The application image will be stored in this registry URL. For this lab, we are using the internal registry of OpenShift. Red Hat Developer Hub will use this input data for the application's build and deployment process.
+
+* *Image Tag*: The image tag used to identify the image. The image will be composed by the application name and tag. Red Hat Developer Hub will use this input data for the application's build and deployment process.
+
+* *Component ID*: The component ID is the application name. Red Hat Developer Hub will use this input data for the application's build and deployment process.
+
+** Replace the *N* with *YOUR* user number:
+image:module2/st_component_componentid_quarkus.png[width=65%]  
+
+ Your Component ID will be *inventory-app-*`%USERID%`.
+
+* Click on *Next Step*
+
+* Review and Create
+
+*Sample data*
+
+image:module2/st_component_review_quarkus.png[width=65%]  
+
+* Click on *Create*
+
+=== 2.4 Explore the application overview
+*Congratulations* you have built your first application with *Red Hat Developer Hub*. It is time to explore the components and explore the application overview.
+
+* With all your activities in green, click *Open Component in catalog*. 
+
+image:module2/task_activity.png[width=65%]  
+
+* RHDH will open a new tab with the component information. 
+
+** Take some time to review the information in the screen:
+image:module2/inventory_overview.png[width=65%] 
+
+* Click on *VIEW SOURCE* to access the new source code repository created.
+
+image:module2/inventory_source.png[width=65%] 
+
+* Click on *TEKTON* to review your pipeline information.
+The pipeline will be triggered right away. After a few minutes, you will see the pipeline finished as Succeeded.
+
+image:module2/inventory_overview.png[width=65%] 
+
+* Click on *TOPOLOGY* to review your deployment status.
+The deployment will be in *blue* immediately after the pipeline succeeds.
+
+** Click on the deployment *inventory-app-*`%USERID%`.
+
+At your right the application details is available. 
+
+image:module2/inventory_deployment.png[width=65%] 
+
+*Note*: We will continue exploring this view in the next section.
+
+== 2.3 Move a Java Spring application: Catalog application
+
+* From the left menu, click on *Create*:
+
+* Select the *Spring Backend Application* Template:
+
+image:module2/software_templates_spring.png[width=65%]  
+
+Follow the next steps to create a component based on the pre-defined Software Templates:
+
+*Step 1* - Provide information about the GitLab location :
+
+* *Repo Host*: is the GitLab domain already installed in OpenShift. Red Hat Developer Hub will use this input data to upload the source repository and manifests.
+
+** ONLY Replace the *xx* with the OpenShift domain:
+image:module2/st_gitlab_info.png[width=65%]  
+
+*Sample*: gitlab-gitlab.apps.cluster-jz5bm.sandbox2375.opentlc.com
+
+* ONLY Replace the *xx* with the OpenShift domain:
+image:module2/st_gitlab_info.png[width=65%]  
+
+* *Repo Group*: is the GitLab organization already configured. Red Hat Developer Hub will use this input data to upload the source repository and manifests.
+
+* Click on *Next Step*
+
+*Step 2* - Provide information about the GitLab location :
+
+*Cluster Id*: is the OpenShift domain. Red Hat Developer Hub will use this input data to build and deploy the application.
+
+** Replace the *xx* with the OpenShift domain:
+image:module2/st_component_clusterid.png[width=65%]  
+
+*Sample*: .apps.cluster-jz5bm.sandbox2375.opentlc.com
+
+* *Namespace*:  is the OpenShift namespace. Red Hat Developer Hub will use this input data to build and deploy the application in that namespace.
+
+** Replace the *N* with the user number:
+image:module2/st_component_namespace.png[width=65%]  
+
+ Your namespace will be *rhdhub-*`%USERID%`.
+
+*Note*: Each lab participant is already assigned a unique namespace to be used for all the applications. Each application will have a shared identification based on your user name. 
+
+* *Owner*: The owner is your user ID. Red Hat Developer Hub will use this input data in the build and deployment process.
+
+** Replace the *N* with the user:
+image:module2/st_component_owner.png[width=65%]  
+
+ Your user will be `%USERID%`.
+
+
+* Click on *Next Step*
+
+*Step 3* - Provide Build information:
+
+* *Image Host*: The application image will be stored in this registry URL. For this lab, we are using the internal registry of OpenShift. Red Hat Developer Hub will use this input data for the application's build and deployment process.
+
+* *Image Tag*: The image tag used to identify the image. The image will be composed by the application name and tag. Red Hat Developer Hub will use this input data for the application's build and deployment process.
+
+* *Component ID*: The component ID is the application name. Red Hat Developer Hub will use this input data for the application's build and deployment process.
+
+** Replace the *N* with *YOUR* user number:
+image:module2/st_component_componentid_spring.png[width=65%]  
+
+ Your Component ID will be *catalog-app-*`%USERID%`.
+
+* Click on *Next Step*
+
+* Review and Create
+
+*Sample data*
+
+image:module2/st_component_review_spring.png[width=65%]  
+
+
+* Click on *Create*
+
+=== 2.2 Explore the application overview
+*Congratulations* you have built your first application with *Red Hat Developer Hub*. It is time to explore the components and explore the application overview.
+
+* With all your activities in green, click *Open Component in catalog*. 
+
+image:module2/task_activity.png[width=65%]   
+
+* RHDH will open a new tab with the component information. 
+
+** Take some time to review the information in the screen:
+
+image:module2/catalog_overview.png[width=65%] 
+
+* In the same tab, click on *Pipelines* to OpenShift to review the Pipelines details. 
+
+image:module2/pipelines_openshift.png[width=65%] 
+
+* Go back to the RHDH UI.
+
+* In the same tab, click on *Deployment* to review your deployment status in OpenShift.
+The deployment will be in *blue* immediately after the pipeline succeeds.
+
+*Note*:As you can see, if developers have access, they can review the information in OpenShift as well.
+
+image:module2/catalog_deployment.png[width=65%] 
+
+*Note*: We will continue exploring this view in the next module.
+
+## Congratulations!
+You have successfully built and Deployed, using ci/cd, the backend services needed for Cool Store online to work. You used two software templates to build Java Spring and Java Quarkus applications. Depending on your company guidelines and architectures, you could use more templates to satisfy the application's needs. 
