@@ -1,0 +1,409 @@
+= 3. Application Development - 30 minutes
+:imagesdir: ../assets/images
+
+== Goals of this lab
+
+This lab aims to explore further modernization by using new software templates. Additionally, it shows how developers can code freely using *Red Hat OpenShift Dev Spaces*. In this section, you will migrate all the gateway and frontend microservices to complete the deployment of the Cool Store Application.
+
+*Module goals*:
+
+* Create a component for a *NodeJS Application* using existing *software templates* 
+* Create a component for a *Java Gateway Application* using existing *software templates* 
+* Overview of application details, ArgoCD, and cluster information.
+* Explore GitLab issues with RHDH
+* Fix a GitLab issue using Red Hat Dev Spaces with Explore software catalog to integrate with other microservices (open API) 
+* Review Metrics
+
+== 3.1 Move a Gateway Java application
+
+* Access the Red Hat Developer Hub UI, https://https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^]
+
+Login with your OpenShift credential:
+
+    ** *Username*: `%USERID%`
+    ** *Password*: `{openshift-password}`
+
+=== 3.1 Use Software Templates to build and deploy your first Gateway application
+
+* From the left menu, click on *Create*:
+
+* Select the *Quarkus Backend Application* Template:
+
+image:module3/software_templates_gateway.png[width=65%]  
+
+Follow the next steps to create a component based on the pre-defined Software Templates:
+
+*Step 1* - Provide information about the GitLab location :
+
+* *Repo Host*: is the GitLab domain already installed in OpenShift. Red Hat Developer Hub will use this input data to upload the source repository and manifests.
+
+** ONLY Replace the *xx* with the OpenShift domain:
+image:module3/st_gitlab_info.png[width=65%]  
+
+** ONLY Replace the *xx* with the OpenShift domain:
+image:module3/st_gitlab_info.png[width=65%]  
+
+*Sample*: gitlab-gitlab.apps.cluster-jz5bm.sandbox2375.opentlc.com
+
+* ONLY Replace the *xx* with the OpenShift domain:
+image:module3/st_gitlab_info.png[width=65%]  
+
+* *Repo Group*: is the GitLab organization already configured. Red Hat Developer Hub will use this input data to upload the source repository and manifests.
+
+* Click on *Next Step*
+
+*Step 2* - Provide information about the GitLab location :
+
+*Cluster Id*: is the OpenShift domain. Red Hat Developer Hub will use this input data to build and deploy the application.
+
+** Replace the *xx* with the OpenShift domain:
+image:module3/st_component_clusterid.png[width=65%]  
+
+*Sample*: .apps.cluster-jz5bm.sandbox2375.opentlc.com
+
+* *Namespace*:  is the OpenShift namespace. Red Hat Developer Hub will use this input data to build and deploy the application in that namespace.
+
+** Replace the *N* with the user number:
+image:module3/st_component_namespace.png[width=65%]  
+
+ Your namespace will be *rhdhub-*`%USERID%`.
+
+*Note*: Each lab participant is already assigned a unique namespace to be used for all the applications. Each application will have a shared identification based on your user name. 
+
+* *Owner*: The owner is your user ID. Red Hat Developer Hub will use this input data in the build and deployment process.
+
+** Replace the *N* with the user:
+image:module3/st_component_owner.png[width=65%]  
+
+ Your user will be `%USERID%`.
+
+* Click on *Next Step*
+
+*Step 3* - Provide Build information:
+
+* *Image Host*: The application image will be stored in this registry URL. For this lab, we are using the internal registry of OpenShift. Red Hat Developer Hub will use this input data for the application's build and deployment process.
+
+* *Image Tag*: The image tag used to identify the image. The image will be composed by the application name and tag. Red Hat Developer Hub will use this input data for the application's build and deployment process.
+
+* *Component ID*: The component ID is the application name. Red Hat Developer Hub will use this input data for the application's build and deployment process.
+
+** Replace the *N* with *YOUR* user number:
+image:module3/st_component_componentid_gateway.png[width=65%]  
+
+ Your Component ID will be *gateway-app-*`%USERID%`.
+
+* Click on *Next Step*
+
+* Review and Create
+
+*Sample data*
+
+image:module3/st_component_review_gateway.png[width=65%]  
+
+* Click on *Create*
+
+=== 2.2 Explore the application overview
+*Congratulations* you have built your first Java Gateway application with *Red Hat Developer Hub*. It is time to explore the components and explore the application overview.
+
+* With all your activities in green, click *Open Component in catalog*. 
+
+image:module3/task_activity.png[width=65%]  
+
+* RHDH will open a new tab with the component information. 
+
+** Take some time to review the information in the screen:
+image:module3/gateway_overview.png[width=65%]  
+
+* Click on *TEKTON* to review your pipeline information.
+The pipeline will be triggered right away. After a few minutes, you will see the pipeline finished as Succeeded.
+
+image:module3/gateway_overview.png[width=65%] 
+
+* Click on *TOPOLOGY* to review your deployment status.
+The deployment will be in *blue* immediately after the pipeline succeeds.
+
+** Click on the deployment *gateway-app-*`%USERID%`.
+
+At your right the application details is available. 
+
+image:module3/gateway_deployment.png[width=65%] 
+
+* Click on *KUBERNETES* to review your application status in the OpenShift cluster.
+You might find the pods still not ready. Wait a few seconds to see everything in green.
+
+image:module3/gateway_yourclusters.png[width=65%] 
+
+** Expand the pods information:
+
+image:module3/gateway_kubernetes_clusters_ok.png[width=65%] 
+
+With everything in green, you are ready to move to the next session.
+
+*Note*: We will continue exploring this view in the next section.
+
+== 2.2 Move a Java Quarkus application: Inventory
+
+* Access the Red Hat Developer Hub UI, https://https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^]
+
+Login with your OpenShift credential:
+
+    ** *Username*: `%USERID%`
+    ** *Password*: `{openshift-password}`
+
+=== 2.2 dfd
+
+* From the left menu, click on *Create*:
+
+* Select the *Quarkus Backend Application* Template:
+
+image:module3/software_templates_quarkus.png[width=65%]  
+
+Follow the next steps to create a component based on the pre-defined Software Templates:
+
+*Step 1* - Provide information about the GitLab location :
+
+* *Repo Host*: is the GitLab domain already installed in OpenShift. Red Hat Developer Hub will use this input data to upload the source repository and manifests.
+
+** ONLY Replace the *xx* with the OpenShift domain:
+image:module3/st_gitlab_info.png[width=65%]  
+
+*Sample*: gitlab-gitlab.apps.cluster-jz5bm.sandbox2375.opentlc.com
+
+* ONLY Replace the *xx* with the OpenShift domain:
+image:module3/st_gitlab_info.png[width=65%]  
+
+* *Repo Group*: is the GitLab organization already configured. Red Hat Developer Hub will use this input data to upload the source repository and manifests.
+
+* Click on *Next Step*
+
+== 3.2 Move a Java Quarkus application: Inventory
+
+* Access the Red Hat Developer Hub UI, https://https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^]
+
+Login with your OpenShift credential:
+
+    ** *Username*: `%USERID%`
+    ** *Password*: `{openshift-password}`
+
+=== 3.2 Use Software Templates to build and deploy your first application
+
+* From the left menu, click on *Create*:
+
+* Select the *Quarkus Backend Application* Template:
+
+image:module3/software_templates_quarkus.png[width=65%]  
+
+Follow the next steps to create a component based on the pre-defined Software Templates:
+
+*Step 1* - Provide information about the GitLab location :
+
+* *Repo Host*: is the GitLab domain already installed in OpenShift. Red Hat Developer Hub will use this input data to upload the source repository and manifests.
+
+** ONLY Replace the *xx* with the OpenShift domain:
+image:module3/st_gitlab_info.png[width=65%]  
+
+*Sample*: gitlab-gitlab.apps.cluster-jz5bm.sandbox2375.opentlc.com
+
+* ONLY Replace the *xx* with the OpenShift domain:
+image:module3/st_gitlab_info.png[width=65%]  
+
+* *Repo Group*: is the GitLab organization already configured. Red Hat Developer Hub will use this input data to upload the source repository and manifests.
+
+* Click on *Next Step*
+
+== 3.2 Move an Angular application: the frontend
+
+* From the left menu, click on *Create*:
+
+* Select the *Frontend Application* Template:
+
+image:module3/software_templates_frontend.png[width=65%]  
+
+Follow the next steps to create a component based on the pre-defined Software Templates:
+
+*Step 1* - Provide information about the GitLab location :
+
+* *Repo Host*: is the GitLab domain already installed in OpenShift. Red Hat Developer Hub will use this input data to upload the source repository and manifests.
+
+** ONLY Replace the *xx* with the OpenShift domain:
+image:module3/st_gitlab_info.png[width=65%]  
+
+*Sample*: gitlab-gitlab.apps.cluster-jz5bm.sandbox2375.opentlc.com
+
+* ONLY Replace the *xx* with the OpenShift domain:
+image:module3/st_gitlab_info.png[width=65%]  
+
+* *Repo Group*: is the GitLab organization already configured. Red Hat Developer Hub will use this input data to upload the source repository and manifests.
+
+* Click on *Next Step*
+
+*Step 2* - Provide information about the GitLab location :
+
+*Cluster Id*: is the OpenShift domain. Red Hat Developer Hub will use this input data to build and deploy the application.
+
+** Replace the *xx* with the OpenShift domain:
+image:module3/st_component_clusterid.png[width=65%]  
+
+*Sample*: .apps.cluster-jz5bm.sandbox2375.opentlc.com
+
+* *Namespace*:  is the OpenShift namespace. Red Hat Developer Hub will use this input data to build and deploy the application in that namespace.
+
+** Replace the *N* with the user number:
+image:module3/st_component_namespace.png[width=65%]  
+
+ Your namespace will be *rhdhub-*`%USERID%`.
+
+*Note*: Each lab participant is already assigned a unique namespace to be used for all the applications. Each application will have a shared identification based on your user name. 
+
+* *Owner*: The owner is your user ID. Red Hat Developer Hub will use this input data in the build and deployment process.
+
+** Replace the *N* with the user:
+image:module3/st_component_owner.png[width=65%]  
+
+ Your user will be `%USERID%`.
+
+* Click on *Next Step*
+
+*Step 3* - Provide Build information:
+
+* *Image Host*: The application image will be stored in this registry URL. For this lab, we are using the internal registry of OpenShift. Red Hat Developer Hub will use this input data for the application's build and deployment process.
+
+* *Image Tag*: The image tag used to identify the image. The image will be composed by the application name and tag. Red Hat Developer Hub will use this input data for the application's build and deployment process.
+
+* *Component ID*: The component ID is the application name. Red Hat Developer Hub will use this input data for the application's build and deployment process.
+
+** Replace the *N* with *YOUR* user number:
+image:module3/st_component_componentid_frontend.png[width=65%]  
+
+ Your Component ID will be *frontend-app-*`%USERID%`.
+
+* Click on *Next Step*
+
+* Review and Create
+
+*Sample data*
+
+image:module3/st_component_review_frontend.png[width=65%]  
+
+* Click on *Create*
+
+=== 2.2 Explore the application overview
+*Congratulations* you have built your first frontend application with *Red Hat Developer Hub*. It is time to explore the components and explore the application overview.
+
+* With all your activities in green, click *Open Component in catalog*. 
+
+image:module3/task_activity.png[width=65%]  
+
+* RHDH will open a new tab with the component information. 
+
+** Review the information in the screen:
+image:module3/frontend_overview.png[width=65%] 
+
+* Click on *TEKTON* to review your pipeline information.
+The pipeline will be triggered right away. After a few minutes, you will see the pipeline finished as Succeeded.
+
+image:module3/frontend_pipeline.png[width=65%] 
+
+* Click on *TOPOLOGY* to review your deployment status.
+The deployment will be in *blue* immediately after the pipeline succeeds.
+
+** Click on the deployment *frontend-app-*`%USERID%`.
+
+At your right the application details is available. 
+
+image:module3/frontend_deployment.png[width=65%] 
+
+* Click on *CD* to review ARGOCD History.
+
+image:module3/frontend_argohistory.png[width=65%] 
+
+* Click on *API* to review the consumed/provied API for the frontend application.
+
+image:module3/frontend_apiconsume.png[width=65%] 
+
+=== 3.6 Fix an issue reported about the application
+
+As a developer, you need to work on many feature requests or issues. In this use case, you will fix a problem with the title in the front-end application. Red Hat Developer Hub is a single pane of glass that allows you to access all the tools and information for your app from one single place. 
+
+1. Look at the Git issues by clicking on *ISSUES*. 
+2. You will be able to see any GitHub issues associated with the application. 
+
+There is an issue to be fixed:
+
+image::module3/frontend_issues_desc.png[width=80%]
+
+* Click on the *issue link* to read the information.
+
+image:module3/frontend_issues.png[width=65%]
+
+* Go back to the RHDH.
+
+3. From the *OVERVIEW* tab click on Red Hat OpenShift Dev Spaces to make the necessary source code changes.
+
+image::module3/frontend_devspaces.png[width=80%]
+
+4. Log in OpenShift Dev Spaces:
+
+4.1 Click on *Log in with OpenShift* button:
+
+image::module3/devspaces_login.png[width=80%]
+
+Login with your OpenShift credential in the Red Hat Single Sign On (RHSSO) screen:
+
+ * *Username*: `%USERID%`
+ * *Password*: `{openshift-password}`
+
+4.3 Authorize the access by click on "Allow selected permissions"
+
+image::module3/devspaces_authorize.png[width=80%]
+
+4.5 Wait for your Red Hat OpenShift Dev Spaces workspace to be ready. This can take a few minutes. You will see a loading screen while the workspace is being provisioned, where Red Hat OpenShift Dev Spaces is creating a workspace based on a devfile stored in the source code repository, which can be customized to include your tools and configuration.
+
+
+4.6 Confirm the access by clicking "Yes, I trust the authors".
+
+image::module3/devspaces_trustauthors.png[width=80%]
+
+image::module3/devspaces_view.png[width=80%]
+
+** Click on *Mark Done*
+
+4.7 Expand the frontend-app-%USERID%` to find for the file: header.html as shown in the picture below.
+
+image::module3/file_change.png[width=80%]
+
+//TBD add code snippet showing code changes needed.
+
+4.8 Update the *Title* in *line 12*, adding your preferred city 
+
+*Sample:*
+
+image::module3/file_change.png[width=80%]
+
+4.8 Commit your source code changes.
+
+* Click on the *Source Control* icon
+* Add a tile
+* Click on *Commit & Push*
+
+image::module3/dev_commit.png[width=50%]
+
+* Confirm the changes
+
+image::module3/dev_confirmed.png[width=50%]
+
+
+5. Explore Pipelines from Red Hat Developer Hub.
+
+6. Explore the metrics.
+
+6. Refresh the web page.
+
+
+
+## Congratulations!
+
+You have successfully built the Cool Store application.
+
+
+

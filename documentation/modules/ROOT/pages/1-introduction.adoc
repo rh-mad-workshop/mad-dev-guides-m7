@@ -29,16 +29,19 @@ image::intro/red_hat_developer_hub_assets.png[]
 
 Red Hat Developer Hub has already been installed and configured in the workshop environment.
 
-Access the application launcher (9 dots) at your right and click on Red Hat Developer Hub, as the figure shows.
+To get started, access https://https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^]
 
-image::intro/menu.png[]
+Login with your OpenShift credential:
+
+ * *Username*: `%USERID%`
+ * *Password*: `{openshift-password}`
 
 Red Hat Developer Hub is already configured with https://access.redhat.com/products/red-hat-single-sign-on/[Red Hat Single Sign On^]. Login with your Gitea credentials:
  
 image::intro/authentication.png[]
 
 === 1.2.4 Quick tour of Red Hat Developer Hub
-Welcome to Red Hat Developer Hub!
+*Welcome to Red Hat Developer Hub!*
 
 You should now see the red sign with the "Welcome to Red Hat Developer Hub!" on your screen.
 
@@ -67,11 +70,9 @@ At your left, the Red Hat Developer Hub menu:
 *Navigate each of the menu items to explore the different solutions:*
 
 
-
 [.float-group]
 --
 image:intro/rhdevhub_menu.png[width=45%, float=left]  
-
 
 * Catalog is the Software catalog available.  
 * APIs available for developers to consume
@@ -83,13 +84,24 @@ image:intro/rhdevhub_menu.png[width=45%, float=left]
 image:intro/learning_paths_explore.png[width=65%, float=left]  
 
 --
-* Create: Developers can build and deploy their applications by creating a component by choosing a pre-defined template. Next, Lab will explore this feature. You will spend most of your time during this module on this section.
+
 * Tech Radar: Company radar to understand their modernization technology landscape. This information will be updated by each company.
 
 
-image:intro/tech_radar.png[width=65%, float=left]  
+image:intro/tech_radar.png[width=65%, float=left] 
 
 
+* Create: Developers can build and deploy their applications by creating a component by choosing a pre-defined template. You will spend most of your time during this module on this feature.
+
+image:intro/software_templates_all.png[width=65%, float=left]   
+
+Each Software Template is already built based on Application features such as Quarkus, Spring Boot, and Angular. The templates are composed of everything that is required for an application to be built, deployed and managed in *OpenShift*:
+
+- Application Source code
+- Application Pipelines based on *OpenShift Pipelines*
+- Application Manifests using GitOps approach with *OpenShift GitOps* and templates with *Helm Charts*.
+
+Software Templates are built based on best practices to create a repeatable process for developers.
 
 *Congratulations!*
 
