@@ -29,7 +29,7 @@ image::intro/red_hat_developer_hub_assets.png[]
 
 Red Hat Developer Hub has already been installed and configured in the workshop environment.
 
-To get started, access https://https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^]
+To get started, access https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^]
 
 Login with your OpenShift credential:
 
