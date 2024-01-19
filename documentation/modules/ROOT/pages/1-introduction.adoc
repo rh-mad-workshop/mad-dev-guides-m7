@@ -6,7 +6,7 @@
 This module shows how developers can build, deploy, and manage applications using Red Hat Developer Hub. Red Hat Developer Hub will allow you to perform the same previous activities with an accelerated approach by reducing developer friction and improving time to market.
 
 The module starts with the product overview, followed by its architecture and a tour of the main functionalities. 
-You will implement two use cases, from *maintaining a new application* that requires bug fixing to *modernizing a legacy application*.
+You will implement two use cases, from *maintaining a new application* that requires bug fixing to *modernizing a set of microservices* by moving them into OpenShift.
 
 == 1.2 Red Hat Developer Hub Overview
 
@@ -104,7 +104,7 @@ Each Software Template is already built based on Application features such as Qu
 - Application Manifests using GitOps approach with *OpenShift GitOps* and templates with *Helm Charts*.
 - *Red Hat OpenShift Dev Spaces* as part of the developer experience to access an integrated IDE for source code changes.
 
-Software Templates are built based on best practices to create a repeatable process for developers.
+*Software Templates* are built based on best practices to create a repeatable process for developers.
 
 *Congratulations!*
 
