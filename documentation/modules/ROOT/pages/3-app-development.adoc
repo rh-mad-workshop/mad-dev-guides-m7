@@ -3,18 +3,18 @@
 
 == Goals of this lab
 
-This lab aims to explore further modernization by using new software templates. Additionally, it shows how developers can code freely using *Red Hat OpenShift Dev Spaces*. In this section, you will migrate all the gateway and frontend microservices to complete the deployment of the Cool Store Application.
+This lab aims to explore further modernization by using new software templates. Additionally, it shows how developers can code freely using *Red Hat OpenShift Dev Spaces*. In this section, you will migrate the *gateway* and *frontend* microservices to complete the deployment of the Cool Store Application.
 
 *Module goals*:
 
 * Create a component for a *NodeJS Application* using existing *software templates* 
 * Create a component for a *Java Gateway Application* using existing *software templates* 
-* Overview of application details, ArgoCD, and cluster information.
+* Overview of application details, ArgoCD and cluster information.
 * Explore GitLab issues with RHDH
-* Fix a GitLab issue using Red Hat Dev Spaces with Explore software catalog to integrate with other microservices (open API) 
-* Explore Application Dependencies
+* Fix a GitLab issue using Red Hat Dev Spaces
+* Explore APIs and application Dependencies
 
-== 3.1 Move a Gateway Java application
+== 3.1 Move the Gateway Java application
 
 * Access the Red Hat Developer Hub UI, https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^]
 
@@ -35,9 +35,9 @@ Follow the next steps to create a component based on the pre-defined Software Te
 
 *Step 1* - Provide information about the GitLab location :
 
-*Repo Host*: is the GitLab domain already installed in OpenShift. Red Hat Developer Hub will use this input data to upload the source repository and manifests. 
+* *Repo Host*: is the GitLab domain already installed in OpenShift. Red Hat Developer Hub will use this input data to upload the source repository and manifests. 
 
-** Replace the *Repo Host* with the OpenShift domain: gitlab-gitlab.%SUBDOMAIN%
+** Replace the *Repo Host* with the OpenShift domain: *gitlab-gitlab.%SUBDOMAIN%*
 
 image:module3/st_gitlab_info.png[width=65%]  
 
@@ -47,9 +47,9 @@ image:module3/st_gitlab_info.png[width=65%]
 
 *Step 2* - Provide information about the GitLab location :
 
-*Cluster Id*: is the OpenShift domain. Red Hat Developer Hub will use this input data to build and deploy the application.
+* *Cluster Id*: is the OpenShift domain. Red Hat Developer Hub will use this input data to build and deploy the application.
 
-** Replace the *Cluster Id* with the OpenShift domain: %SUBDOMAIN%
+** Replace the *Cluster Id* with the OpenShift domain: *.%SUBDOMAIN%*
 
 image:module3/st_component_clusterid.png[width=65%]  
 
@@ -78,14 +78,14 @@ image:module3/st_component_owner.png[width=40%]
 
 * *Component ID*: The component ID is the application name. Red Hat Developer Hub will use this input data for the application's build and deployment process.
 
-** Replace the *Component ID* using *YOUR* user number: *catalog-app-*`%USERID%`
+** Replace the *Component ID* using *YOUR* user number: *gateway-app-*`%USERID%`
 
 image:module3/st_component_componentid_gateway.png[width=65%]  
 
 
 * Click on *Next Step*
 
-* Review and Create
+* *Review and Create*
 
 *Sample data*
 
@@ -134,7 +134,7 @@ With everything in green, you are ready to move to the next session.
 *Note*: We will continue exploring this view in the next section.
 
 
-== 3.2 Move an Angular application: the frontend
+== 3.2 Move the Angular application: the frontend
 
 * From the left menu, click on *Create*:
 
@@ -148,7 +148,7 @@ Follow the next steps to create a component based on the pre-defined Software Te
 
 * *Repo Host*: is the GitLab domain already installed in OpenShift. Red Hat Developer Hub will use this input data to upload the source repository and manifests.
 
-** Replace the *Repo Host* with the OpenShift domain: gitlab-gitlab.%SUBDOMAIN%
+** Replace the *Repo Host* with the OpenShift domain: *gitlab-gitlab.%SUBDOMAIN%*
 
 image:module3/st_gitlab_info.png[width=65%]  
 
@@ -158,9 +158,9 @@ image:module3/st_gitlab_info.png[width=65%]
 
 *Step 2* - Provide information about the GitLab location :
 
-*Cluster Id*: is the OpenShift domain. Red Hat Developer Hub will use this input data to build and deploy the application.
+* *Cluster Id*: is the OpenShift domain. Red Hat Developer Hub will use this input data to build and deploy the application.
 
-** Replace the *Cluster Id* with the OpenShift domain: %SUBDOMAIN%
+** Replace the *Cluster Id* with the OpenShift domain: *.%SUBDOMAIN%*
 
 image:module3/st_component_clusterid.png[width=65%]  
 
@@ -188,14 +188,14 @@ image:module3/st_component_owner.png[width=40%]
 
 * *Component ID*: The component ID is the application name. Red Hat Developer Hub will use this input data for the application's build and deployment process.
 
-** Replace the *Component ID* using *YOUR* user number: *catalog-app-*`%USERID%`
+** Replace the *Component ID* using *YOUR* user number: *frontend-app-*`%USERID%`
 
 image:module3/st_component_componentid_frontend.png[width=65%]  
 
 
 * Click on *Next Step*
 
-* Review and Create
+* *Review and Create*
 
 *Sample data*
 
@@ -240,7 +240,7 @@ image:module3/frontend_apiconsume.png[width=100%]
 
 * Access the Cool Store UI to verify everything is working as expected:
 
-** Copy the route in a web browser: https://frontend-app-%USERID%-rhdhub-%USERID%.%SUBDOMAIN%/[Cool Store Website^]
+** Click on the following link: https://frontend-app-%USERID%-rhdhub-%USERID%.%SUBDOMAIN%/[Cool Store Website^]
 
 
 image::module3/final_web.png[width=100%]
@@ -265,7 +265,7 @@ image::module3/frontend_issue_desc.png[width=100%]
 
 * Go back to the RHDH.
 
-3. From the *OVERVIEW* tab click on Red Hat OpenShift Dev Spaces to make the necessary source code changes.
+3. From the *OVERVIEW* tab click on *OpenShift Dev Spaces (VS Code)* to make the necessary source code changes.
 
 image::module3/frontend_devspaces.png[width=80%]
 
@@ -284,7 +284,15 @@ image::module3/devspaces_login.png[width=80%]
 
 image::module3/devspaces_authorize.png[width=80%]
 
+
+4.4 Authorize *devspaces* to use your account by clicking on the *Authorize* button.
+
+image::module3/devspaces_authorize_user.png[width=60%]
+
 4.5 Wait for your Red Hat OpenShift Dev Spaces workspace to be ready. This can take a few minutes. You will see a loading screen while the workspace is being provisioned, where Red Hat OpenShift Dev Spaces is creating a workspace based on a devfile stored in the source code repository, which can be customized to include your tools and configuration.
+
+
+image::module3/devspaces_loading.png[width=60%]
 
 
 4.6 Confirm the access by clicking *"Yes, I trust the authors"*.
@@ -310,7 +318,7 @@ image::module3/dev_file_changed.png[width=80%]
 4.8 Commit your source code changes.
 
 * Click on the *Source Control* icon
-* Add a tile
+* Add a *Message*
 * Click on *Commit & Push*
 
 image::module3/dev_commit.png[width=50%]
@@ -320,7 +328,7 @@ image::module3/dev_commit.png[width=50%]
 image::module3/dev_confirmed.png[width=50%]
 
 
-5. Explore Pipelines from Red Hat Developer Hub.
+* Explore Pipelines from Red Hat Developer Hub.
 
 Your source code changes triggered a new pipeline to update the version of the frontend application.
 
@@ -330,16 +338,35 @@ Your source code changes triggered a new pipeline to update the version of the f
 
 image::module3/frontend_newpipeline.png[width=50%]
 
-6. Refresh the Cool Store web page.
+* Refresh the Cool Store web page.
 
 
 You will see the *new title* in the Cool Store Web page.
 
 image::module3/final_web.png[width=100%]
 
+*Congratulations!*  You have finished your git request.
+
+## Bonus Point: Explore applications dependencies and APIs
+
+* Go back to RHDH UI
+
+* Click on the *Overview* tab. Next, click on the *workshop-system-rhdhub-%USERID%* section.
+
+image::module3/overview_workshop.png[width=80%]
+
+* Explore the application components and APIs. 
+** This function is ideal for understanding how systems interact with each other.
+
+image::module3/workshop_detail.png[width=100%]
+
+
+* The *Relations* section shows all the services you have installed on your namespace. 
+* The *APIs* section shows the Gateway API the frontend application is consuming to access the backend services information from product catalog to inventory. 
+
 ## Congratulations!
 
-You have successfully built the Cool Store application.
+You have successfully built the Cool Store application and learn the benefits of Red Hat Developer Hub with Software Templates reduce developer cognitive load by providing pre-architected and supported approaches to building and deploying a service or software component without having to learn all the details of the technology used to create it.
 
 
 

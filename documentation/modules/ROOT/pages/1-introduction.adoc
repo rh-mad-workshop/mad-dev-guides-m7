@@ -31,12 +31,11 @@ Red Hat Developer Hub has already been installed and configured in the workshop 
 
 To get started, access https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^]
 
-Login with your OpenShift credential:
+
+Red Hat Developer Hub is already configured with https://access.redhat.com/products/red-hat-single-sign-on/[Red Hat Single Sign On^]. Log in with your OpenShift credentials:
 
  * *Username*: `%USERID%`
  * *Password*: `{openshift-password}`
-
-Red Hat Developer Hub is already configured with https://access.redhat.com/products/red-hat-single-sign-on/[Red Hat Single Sign On^]. Login with your Gitea credentials:
  
 image::intro/authentication.png[]
 
@@ -44,25 +43,21 @@ image::intro/authentication.png[]
 
 *Welcome to Red Hat Developer Hub!*
 
-You should now see the red sign with the *Welcome to Red Hat Developer Hub!* on your screen.
-
 image::intro/welcome.png[]
 
 On the main screen, you will see the *Quick Access* section:
 
 *Note*: The following links are pre-defined and can be configured and updated.
 
-* Community: resources to connect with the community from websites, blogs, Slack, and videos.
+* *Community*: resources to connect with the community from websites, blogs, Slack, and videos.
 
-* Developer tools: website links to developer tools.
+* *Developer tools*: website links to developer tools.
 
-* CI/CD tools: From ArgoCD to Quay
+* *CI/CD tools*: From OpenShift Pipelines, OpenShift GitOps to Quay
 
-* OpenShift clusters: OpenShift cluster
+* *OpenShift clusters*: OpenShift cluster
 
-* Monitoring tools: Grafana
-
-* Security tools: Keycloak
+* *Security tools*: Keycloak
 
 
 At your left, the *Red Hat Developer Hub* menu:
@@ -73,13 +68,13 @@ At your left, the *Red Hat Developer Hub* menu:
 
 image:intro/rhdevhub_menu.png[width=45%, float=left]  
 
-* Catalog is the Software catalog available. 
+* *Catalog* is the Software Catalog available to build and deploy applications. 
 
-* APIs available for developers to consume
+* *APIs* available for developers to consume.
 
-* Docs: customer documentation that developers and DevOps can access as part of the company guidelines and best practices.
+* *Docs*:  customer documentation that developers and DevOps can access as part of the company guidelines and best practices.
 
-* Learning Paths: developers and DevOps can utilize customer learning paths to learn and advance their skills
+* *Learning Paths*: Developers and DevOps can utilize customer learning paths to learn and advance their skills
 
 
 * Explore the Learning Path: *Developing on OpenShift*
@@ -87,24 +82,26 @@ image:intro/rhdevhub_menu.png[width=45%, float=left]
 image:intro/learning_paths_explore.png[width=40%]  
 
 
-* Tech Radar: Company radar to understand their modernization technology landscape. This information will be updated by each company.
+* *Tech Radar*: Company radar to understand their modernization technology landscape. This information will be customized by each company.
 
 
 image:intro/tech_radar.png[width=100%] 
 
 
-* Create: Developers can build and deploy their applications by creating a component by choosing a pre-defined template. You will spend most of your time during this module on this feature.
+* *Create*: Developers can build and deploy their applications by creating a component by choosing a pre-defined template. You will spend most of your time during this module on this feature.
 
 image:intro/software_templates_all.png[width=120%]   
 
 Each Software Template is already built based on Application features such as Quarkus, Spring Boot, and Angular. The templates are composed of everything that is required for an application to be built, deployed and managed in *OpenShift*:
 
 - Application Source code
-- Application Pipelines based on *OpenShift Pipelines*
-- Application Manifests using GitOps approach with *OpenShift GitOps* and templates with *Helm Charts*.
-- *Red Hat OpenShift Dev Spaces* as part of the developer experience to access an integrated IDE for source code changes.
+- Application Pipelines based on https://docs.openshift.com/pipelines/latest/about/understanding-openshift-pipelines.html[*OpenShift Pipelines*^]
+- Application Manifests using GitOps approach with https://docs.openshift.com/gitops/latest/understanding_openshift_gitops/about-redhat-openshift-gitops.html[*Red Hat OpenShift GitOps*^] and templates with *Helm Charts*.
+- https://developers.redhat.com/products/openshift-dev-spaces/overview[*Red Hat OpenShift Dev Spaces*^] as part of the developer experience to access an integrated IDE for source code changes.
 
 *Software Templates* are built based on best practices to create a repeatable process for developers.
+
+https://developers.redhat.com/rhdh[Click for more information^] 
 
 *Congratulations!*
 
