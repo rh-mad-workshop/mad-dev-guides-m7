@@ -3,7 +3,7 @@
 
 == Goals of this lab
 
-This lab aims to learn how developers can modernize their applications quickly by moving them into the OpenShift Application Platform with Red Hat Developer Hub. *Red Hat Developer Hub* is already configured with *Red Hat Single Sign-On*, *OpenShift Pipelines*, *OpenShift GitOps*, and *GitLab*. In this section you will migrate all the backend microservices that are part of the *CoolStore Application* with just a few clicks using Red Hat Developer Hub.
+This lab aims to learn how developers can modernize their applications quickly by moving them into the OpenShift Application Platform with Red Hat Developer Hub. *Red Hat Developer Hub* is already configured with *Red Hat Single Sign-On*, *OpenShift Pipelines*, *OpenShift GitOps*, and *GitLab*. In this section you will migrate all the backend microservices that are part of the *Cool Store Application* with just a few clicks using Red Hat Developer Hub.
 
 *Module goals*:
 
@@ -285,4 +285,4 @@ image:module2/catalog_deployment.png[width=65%]
 *Note*: We will continue exploring this view in the next module.
 
 ## Congratulations!
-You have successfully built and deployed using CI/CD, the backend services needed for the CoolStore application. You used two software templates to build Spring Boot and Quarkus applications. Depending on your company guidelines and architectures, you could use more templates to satisfy the application's needs. 
+You have successfully built and deployed using CI/CD, the backend services needed for the Cool Store application. You used two software templates to build Spring Boot and Quarkus applications. Depending on your company guidelines and architectures, you could use more templates to satisfy the application's needs. 
