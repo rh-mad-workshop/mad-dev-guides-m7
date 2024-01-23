@@ -269,13 +269,18 @@ image:module2/task_activity.png[width=65%]
 
 image:module2/catalog_overview.png[width=100%] 
 
-* In the same tab, click on *Pipelines* to OpenShift to review the Pipelines details. 
+* In the *Overview* tab, click on *Pipelines* to review the Pipelines details in OpenShift. 
+
+image:module2/overview_pipelines_click.png[width=65%] 
+
+Wait until the Pipeline is green. The Pipeline will take a few minutes to complete.
 
 image:module2/pipelines_openshift.png[width=65%] 
 
-* Wait until the Pipeline is green. The Pipeline will take a few minutes to complete.
+* Go back to the RHDH UI and click on *Deployment* in the *Overview* tab to review your deployment status in OpenShift.
 
-* Go back to the RHDH UI and click on *Deployment* in the same tab to review your deployment status in OpenShift.
+image:module2/overview_deployment_click.png[width=65%] 
+
 The deployment will be in *blue* immediately after the Pipeline succeeds.
 
 *Note*: RHDH gives the flexibility if developers have access, to review the same information in OpenShift. 

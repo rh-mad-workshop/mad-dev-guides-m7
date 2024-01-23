@@ -336,9 +336,16 @@ image::module3/devspaces_login.png[width=80%]
 
 image::module3/devspaces_authorize.png[width=80%]
 
+4.4 Log in GitLab using your credentials:
+
+ ** *Username*: `%USERID%`
+ ** *Password*: `{openshift-password}`
+
+image::module3/gitlab_authentication.png[width=80%]
+
 4.4 Authorize *devspaces* to use your account by clicking on the *Authorize* button.
 
-image::module3/devspaces_authorize_user.png[width=60%]
+image::module3/devspaces_authorize_user.png[width=80%]
 
 4.5 Wait for your Red Hat OpenShift Dev Spaces workspace to be ready. This can take a few minutes. You will see a loading screen while the workspace is being provisioned, where Red Hat OpenShift Dev Spaces is creating a workspace based on a devfile stored in the source code repository, which can be customized to include your tools and configuration.
 
@@ -367,14 +374,15 @@ image::module3/dev_file_changed.png[width=80%]
 4.9 Commit your source code changes.
 
 * Click on the *Source Control* icon.
-* Add a *Message*.
-* Click on *Commit & Push*.
+* Add a *Message* for the commit.
+* Click on Commit *arrow*
+* Select the option *Commit & Push*.
 
-image::module3/dev_commit.png[width=50%]
+image::module3/dev_commit.png[width=70%]
 
 * Confirm the changes
 
-image::module3/dev_confirmed.png[width=50%]
+image::module3/dev_confirmed.png[width=100%]
 
 * Explore Pipelines from Red Hat Developer Hub.
 
@@ -384,7 +392,7 @@ Your source code changes triggered a new pipeline to update the version of the f
 
 * Explore the pipelines by clicking on the *TEKTON*.
 
-image::module3/frontend_newpipeline.png[width=50%]
+image::module3/frontend_newpipeline.png[width=100%]
 
 * Refresh the Cool Store web page.
 
