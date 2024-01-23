@@ -16,14 +16,7 @@ This lab aims to explore further modernization by using new software templates. 
 
 == 3.1 Move the Gateway Java application
 
-* Access the https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^]
-
-* Login with your OpenShift credentials:
-
-    ** *Username*: `%USERID%`
-    ** *Password*: `{openshift-password}`
-
-=== 3.1 Use Software Templates to build and deploy your first Gateway application
+=== 3.1.1 Use Software Templates to build and deploy your first Gateway application
 
 * From the left menu, click on *Create*:
 
@@ -120,7 +113,7 @@ image:module3/st_component_review_gateway.png[width=80%]
 
 * Click on *Create*.
 
-=== 3.2 Explore the application overview
+=== 3.1.2 Explore the application overview
 *Congratulations* you have built your first Java Gateway application with *Red Hat Developer Hub*. It is time to explore the components and explore the application overview.
 
 * With all your activities in green, click *Open Component in catalog*. 
@@ -160,7 +153,9 @@ With everything in green, you are ready to move to the next session.
 
 *Note*: We will continue exploring this view in the next section.
 
-== 3.3 Move the frontend NodeJS application 
+== 3.2 Move the frontend NodeJS application 
+
+=== 3.2.1 Use Software Templates to build and deploy your first Frontend application
 
 * From the left menu, click on *Create*:
 
@@ -257,7 +252,7 @@ image:module3/st_component_review_frontend.png[width=100%]
 
 * Click on *Create*.
 
-=== 3.4 Explore the application overview
+=== 3.2.2 Explore the application overview
 
 *Congratulations* you have built your first frontend application with *Red Hat Developer Hub*. It is time to explore the components and explore the application overview.
 
