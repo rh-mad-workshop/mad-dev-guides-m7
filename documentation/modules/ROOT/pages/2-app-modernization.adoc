@@ -48,7 +48,7 @@ Follow the next steps to create a component based on the pre-defined Software Te
 [.console-input]
 [source,bash]
 ----
-*gitlab-gitlab.%SUBDOMAIN%*
+gitlab-gitlab.%SUBDOMAIN%
 ----
 
 image:module2/st_gitlab_info.png[width=65%]  
@@ -66,7 +66,7 @@ image:module2/st_gitlab_info.png[width=65%]
 [.console-input]
 [source,bash]
 ----
-*.%SUBDOMAIN%*
+.%SUBDOMAIN%
 ----
 
 image:module2/st_component_clusterid.png[width=65%]  
@@ -78,7 +78,7 @@ image:module2/st_component_clusterid.png[width=65%]
 [.console-input]
 [source,bash]
 ----
-*rhdhub-*`%USERID%`
+rhdhub-*`%USERID%`
 ----
 
 image:module2/st_component_namespace.png[width=40%]  
@@ -91,7 +91,7 @@ image:module2/st_component_namespace.png[width=40%]
 [.console-input]
 [source,bash]
 ----
-*%USERID%*
+%USERID%
 ----
 
 image:module2/st_component_owner.png[width=40%]  
@@ -111,7 +111,7 @@ image:module2/st_component_owner.png[width=40%]
 [.console-input]
 [source,bash]
 ----
-*inventory-app-*`%USERID%`
+inventory-app-*`%USERID%`
 ----
 
 image:module2/st_component_componentid_quarkus.png[width=40%]  
@@ -124,9 +124,10 @@ image:module2/st_component_componentid_quarkus.png[width=40%]
 
 image:module2/st_component_review_quarkus.png[width=80%]  
 
-* Click on *Create*
+* Click on *Create*.
 
 === 2.4 Explore the application overview
+
 *Congratulations* you have built your first application with *Red Hat Developer Hub*. It is time to explore the components and the application overview.
 
 * With all your activities in green, click *Open Component in catalog*. 
@@ -176,7 +177,7 @@ Follow the next steps to create a component based on the pre-defined Software Te
 [.console-input]
 [source,bash]
 ----
-*gitlab-gitlab.%SUBDOMAIN%*
+gitlab-gitlab.%SUBDOMAIN%
 ----
 
 image:module2/st_gitlab_info.png[width=65%]  
@@ -194,7 +195,7 @@ image:module2/st_gitlab_info.png[width=65%]
 [.console-input]
 [source,bash]
 ----
-*.%SUBDOMAIN%*
+.%SUBDOMAIN%
 ----
 
 image:module2/st_component_clusterid.png[width=40%]  
@@ -206,7 +207,7 @@ image:module2/st_component_clusterid.png[width=40%]
 [.console-input]
 [source,bash]
 ----
-*rhdhub-*`%USERID%`
+rhdhub-*`%USERID%`
 ----
 
 image:module2/st_component_namespace.png[width=40%]  
@@ -219,7 +220,7 @@ image:module2/st_component_namespace.png[width=40%]
 [.console-input]
 [source,bash]
 ----
-*%USERID%*
+%USERID%
 ----
 
 image:module2/st_component_owner.png[width=40%]  
@@ -239,7 +240,7 @@ Click on *Next Step*.
 [.console-input]
 [source,bash]
 ----
-*catalog-app-*`%USERID%`
+catalog-app-*`%USERID%`
 ----
 
 image:module2/st_component_componentid_spring.png[width=50%]  
