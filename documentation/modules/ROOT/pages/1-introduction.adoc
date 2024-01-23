@@ -53,11 +53,11 @@ On the main screen, you will see the *Quick Access* section:
 
 * *Developer tools*: website links to developer tools.
 
-* *CI/CD tools*: From OpenShift Pipelines, OpenShift GitOps to Quay
+* *CI/CD tools*: From OpenShift Pipelines, OpenShift GitOps to Quay.io.
 
-* *OpenShift clusters*: OpenShift cluster
+* *OpenShift clusters*: OpenShift cluster.
 
-* *Security tools*: Keycloak
+* *Security tools*: Keycloak.
 
 
 At your left, the *Red Hat Developer Hub* menu:
@@ -74,7 +74,7 @@ image:intro/rhdevhub_menu.png[width=45%, float=left]
 
 * *Docs*:  customer documentation that developers and DevOps can access as part of the company guidelines and best practices.
 
-* *Learning Paths*: Developers and DevOps can utilize customer learning paths to learn and advance their skills
+* *Learning Paths*: Developers and DevOps can utilize customer learning paths to learn and advance their skills.
 
 
 * Explore the Learning Path: *Developing on OpenShift*
@@ -101,7 +101,7 @@ Each Software Template is already built based on Application features such as Qu
 
 *Software Templates* are built based on best practices to create a repeatable process for developers.
 
-https://developers.redhat.com/rhdh[Click for more information^] 
+Find more information about the Red Hat Developer Hub https://developers.redhat.com/rhdh[here^].
 
 *Congratulations!*
 
