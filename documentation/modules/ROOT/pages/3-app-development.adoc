@@ -105,7 +105,7 @@ image:module3/st_component_owner.png[width=40%]
 [.console-input]
 [source,bash]
 ----
-gateway-app-*`%USERID%`
+gateway-app-%USERID%
 ----
 
 image:module3/st_component_componentid_gateway.png[width=65%]  
@@ -141,7 +141,7 @@ image:module3/gateway_pipelines.png[width=100%]
 * Click on *TOPOLOGY* to review your deployment status.
 The deployment will be in *blue* immediately after the pipeline succeeds.
 
-** Click on the deployment *gateway-app-*`%USERID%`
+** Click on the deployment *gateway-app-%USERID%*
 
 At your right the application details is available. 
 
@@ -242,7 +242,7 @@ image:module3/st_component_owner.png[width=40%]
 [.console-input]
 [source,bash]
 ----
-frontend-app-*`%USERID%`
+frontend-app-%USERID%
 ----
 
 image:module3/st_component_componentid_frontend.png[width=65%]  
@@ -279,7 +279,7 @@ image:module3/frontend_pipeline.png[width=100%]
 * Click on *TOPOLOGY* to review your deployment status.
 The deployment will be in *blue* immediately after the pipeline succeeds.
 
-** Click on the deployment *frontend-app-*`%USERID%`
+** Click on the deployment *frontend-app-%USERID%*
 
 At your right the application details is available. 
 

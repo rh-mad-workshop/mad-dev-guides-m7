@@ -111,7 +111,7 @@ image:module2/st_component_owner.png[width=40%]
 [.console-input]
 [source,bash]
 ----
-inventory-app-*`%USERID%`
+inventory-app-%USERID%
 ----
 
 image:module2/st_component_componentid_quarkus.png[width=40%]  
@@ -150,7 +150,7 @@ image:module2/inventory_pipeline.png[width=100%]
 
 * Click on *TOPOLOGY* to review your deployment status. The deployment will be in *blue* immediately after the pipeline succeeds.
 
-** Click on the deployment *inventory-app-*`%USERID%`
+** Click on the deployment *inventory-app-%USERID%*
 
 At your right the application details is available. 
 
@@ -240,7 +240,7 @@ Click on *Next Step*.
 [.console-input]
 [source,bash]
 ----
-catalog-app-*`%USERID%`
+catalog-app-%USERID%
 ----
 
 image:module2/st_component_componentid_spring.png[width=50%]  
