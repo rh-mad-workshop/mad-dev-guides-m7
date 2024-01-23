@@ -78,7 +78,7 @@ image:module2/st_component_clusterid.png[width=65%]
 [.console-input]
 [source,bash]
 ----
-rhdhub-*`%USERID%`
+rhdhub-%USERID%
 ----
 
 image:module2/st_component_namespace.png[width=40%]  
@@ -207,7 +207,7 @@ image:module2/st_component_clusterid.png[width=40%]
 [.console-input]
 [source,bash]
 ----
-rhdhub-*`%USERID%`
+rhdhub-%USERID%
 ----
 
 image:module2/st_component_namespace.png[width=40%]  
