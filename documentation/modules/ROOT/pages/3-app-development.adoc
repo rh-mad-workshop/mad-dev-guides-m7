@@ -11,7 +11,7 @@ This lab aims to explore further modernization by using new software templates. 
 * Create a component for a *Gateway Java Application* using existing *software templates*.
 * Overview of application details, ArgoCD and cluster information.
 * Explore GitLab issues with Red Hat Developer Hub.
-* Fix a GitLab issue using Red Hat Dev Spaces.
+* Fix a GitLab issue using Red Hat OpenShift Dev Spaces.
 * Explore APIs and application Dependencies.
 
 == 3.1 Move the Gateway Java application
@@ -316,7 +316,7 @@ image::module3/frontend_issue_desc.png[width=100%]
 
 image::module3/frontend_devspaces.png[width=80%]
 
-4. Log in OpenShift Dev Spaces:
+4. Log in Red Hat OpenShift Dev Spaces:
 
 4.1 Click on *Log in with OpenShift* button:
 
@@ -360,7 +360,7 @@ image::module3/devspaces_view.png[width=80%]
 image::module3/file_change.png[width=80%]
 
 
-4.8 Update the *Title* in *line 12*, adding your preferred city. You don't need to save the file because the Dev Spaces automatically saves the changes while you're updating code.
+4.8 Update the *Title* in *line 12*, adding your preferred city. You don't need to save the file because the Red Hat OpenShift Dev Spaces automatically saves the changes while you're updating code.
 
 *Sample:*
 
