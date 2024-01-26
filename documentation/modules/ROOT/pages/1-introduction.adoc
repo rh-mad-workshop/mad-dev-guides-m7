@@ -77,10 +77,12 @@ image:intro/rhdevhub_menu.png[width=45%, float=left]
 * *Learning Paths*: Developers and DevOps can utilize customer learning paths to learn and advance their skills.
 
 
-* Explore the Learning Path: *Developing on OpenShift*
+* Search for the Learning Path: *Developing on OpenShift*
 
 image:intro/learning_paths_explore.png[width=40%]  
 
+** Click on the link. 
+** Go back to the RHDH UI.
 
 * *Tech Radar*: Company radar to understand their modernization technology landscape. This information will be customized by each company.
 

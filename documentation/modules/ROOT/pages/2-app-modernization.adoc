@@ -137,7 +137,8 @@ image:module2/inventory_overview.png[width=100%]
 
 image:module2/inventory_source.png[width=50%] 
 
-* Click on *TEKTON* to review your pipeline information. The pipeline will be triggered in a few seconds. After a few minutes, you will see the pipeline finished as *Succeeded*.
+* Go back to the RHDH UI.
+* Click on *TEKTON* tab to review your pipeline information. The pipeline will be triggered in a few seconds. After a few minutes, you will see the pipeline finished as *Succeeded*.
 
 image:module2/inventory_pipeline.png[width=100%] 
 
