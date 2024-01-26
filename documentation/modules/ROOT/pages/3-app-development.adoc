@@ -368,12 +368,22 @@ image::module3/dev_file_changed.png[width=80%]
 
 4.9 Commit your source code changes.
 
-* Click on the *Source Control* icon.
-* Add a *Message* for the commit.
-* Click on Commit *arrow*
-* Select the option *Commit & Push*.
+image::module3/icon_source_control.png[width=60%, float=left]
 
-image::module3/dev_commit.png[width=70%]
+* Click on the *Source Control* icon. 
+
+
+    * Add a *Message* for the commit.
+    * Click on Commit *arrow*
+    * Select the option *Commit & Push*.
+
+
+image::module3/dev_commit.png[width=60%]
+
+
+
+
+
 
 * Confirm the changes
 
