@@ -298,7 +298,7 @@ image::module3/final_web.png[width=100%]
 
 As a developer, you need to work on many feature requests or issues. In this use case, you will fix a problem with the title in the front-end application. Red Hat Developer Hub is a single pane of glass that allows you to access all the tools and information for your app from one single place. 
 
-1. Go back to the RHDH UI.
+1. Go back to the https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^].
 2. Look at the GitLab issues by clicking on *ISSUES*. 
 3. You will be able to see any GitHub issues associated with the application. 
 
@@ -310,7 +310,7 @@ image:module3/frontend_issues.png[width=100%]
 
 image::module3/frontend_issue_desc.png[width=100%]
 
-* Go back to the RHDH.
+* Go back to the https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^].
 
 3. From the *OVERVIEW* tab click on *OpenShift Dev Spaces (VS Code)* to make the necessary source code changes.
 
@@ -393,7 +393,7 @@ image::module3/dev_confirmed.png[width=100%]
 
 Your source code changes triggered a new pipeline to update the version of the frontend application.
 
-* Go back to RHDH UI.
+* Go back to https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^].
 
 * Explore the pipelines by clicking on the *TEKTON*.
 
@@ -409,7 +409,7 @@ image::module3/final_web.png[width=100%]
 
 ## Bonus Point: Explore applications dependencies and APIs
 
-* Go back to RHDH UI.
+* Go back to https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^].
 
 * Click on the *Overview* tab. Next, click on the *workshop-system-rhdhub-%USERID%* section.
 

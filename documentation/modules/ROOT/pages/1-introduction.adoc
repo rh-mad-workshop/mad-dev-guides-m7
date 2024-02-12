@@ -12,11 +12,32 @@ You will implement two use cases, from *maintaining a new application* that requ
 
 === 1.2.1 What is Red Hat Developer Hub?
 
-https://developers.redhat.com/rhdh[Red Hat Developer Hub^] is an enterprise-grade, open system for building developer portals containing a supported and opinionated framework. Red Hat Developer Hub helps reduce friction and frustration for engineering teams while boosting their productivity and increasing their organization's competitive advantages. Red Hat Developer Hub is based on the upstream project https://backstage.spotify.com/[Backstage^] 
+https://developers.redhat.com/rhdh[Red Hat Developer Hub^] is an enterprise-grade, open system for building developer portals containing a supported and opinionated framework. Red Hat Developer Hub helps reduce friction and frustration for engineering teams while boosting their productivity and increasing their organization's competitive advantages. Red Hat Developer Hub is based on the upstream project https://backstage.spotify.com/[Backstage^]. 
 
-Red Hat Developer Hub can build and deploy applications on the hybrid cloud supporting diverse infrastructure such as cloud services and on-prem.
+Red Hat Developer Hub can build and deploy applications on the hybrid cloud supporting diverse infrastructure such as cloud services and on-prem. 
 
-=== 1.2.2 Red Hat Developer Hub Architecture
+=== 1.2.2 Current Business Challenges
+* Time to market: The learning curve required to create, build and maintain containers slow down software development
+* Hiring, Retaining, and Training Technical Experts: Time spent and resource availability decrease the opportunity to scale technical skills into the organization at different levels.
+* Reducing technical debt through modernization: Disperse and complex technologies required to adopt containers, Kubernetes, cloud, CI/CD
+* Remain competitive: How to adopt best practices in each stage of the application delivery lifecycle to allow developers to focus on innovation.
+* Remain competitive: Feature development competes with modernization efforts reducing the opportunity for modernization.
+Time to market: Lacking a self-service developer experience increases the time spent modernizing applications.
+
+=== 1.2.3 Current Developer Challenges
+* Learning multiple technologies besides their software tools such as CI/CD, Security, Containers, Cloud.
+* Working on repetitive tasks when automation and best practices are not implemented
+* Spending time when lack of patterns and guidelines are not implemented
+* Context switching between a diverse number of tools 
+
+=== 1.2.3 Red Hat Developer Hub Benefits
+
+The Red Hat® Developer Hub is a developer portal that promotes efficiency and collaboration by visually consolidating elements of the development process. It streamlines onboarding speed, developer productivity, and collaboration through a unified and open platform while reducing cognitive load and frustration for the development team. With pre-architected and supported approaches, and by centralizing technology resources, developer focus can center on delivering a competitive advantage for their organization.
+
+
+Development teams can help make sure workflows run smoothly by providing the right tools, validated environments, and on-demand services. Confidence is gained that software will adhere to organizational best practices and standards without introducing unnecessary bureaucracy. Maintenance becomes more manageable, and future teams can easily assume control within a known, trusted environment, while also enhancing governance. https://www.redhat.com/en/technologies/cloud-computing/developer-hub[More information^]
+
+=== 1.3 Red Hat Developer Hub Architecture
 
 image::intro/red_hat_developer_hub_assets.png[]
 
@@ -25,7 +46,9 @@ image::intro/red_hat_developer_hub_assets.png[]
 * *Software Templates*: will be used to create components to bring the applications into the platform according to his runtime and specific configurations.
 * *Plugins*: Plugins will allow customizations on the Red Hat Developer Hub to include new capabilities such as CI/CD and security insights.
 
-=== 1.2.3 Access Red Hat Developer Hub
+=== 1.4 Explore Red Hat Developer Hub
+
+=== 1.4.1 Access Red Hat Developer Hub
 
 Red Hat Developer Hub has already been installed and configured in the workshop environment.
 
@@ -39,7 +62,7 @@ Red Hat Developer Hub is already configured with https://access.redhat.com/produ
  
 image::intro/authentication.png[]
 
-=== 1.2.4 Quick tour of Red Hat Developer Hub
+=== 1.4.2 Quick tour of Red Hat Developer Hub
 
 *Welcome to Red Hat Developer Hub!*
 

@@ -137,7 +137,7 @@ image:module2/inventory_overview.png[width=100%]
 
 image:module2/inventory_source.png[width=50%] 
 
-* Go back to the RHDH UI.
+* Go back to the https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^].
 * Click on *TEKTON* tab to review your pipeline information. The pipeline will be triggered in a few seconds. After a few minutes, you will see the pipeline finished as *Succeeded*.
 
 image:module2/inventory_pipeline.png[width=100%] 
@@ -273,7 +273,7 @@ Wait until the Pipeline is green. The Pipeline will take a few minutes to comple
 
 image:module2/pipelines_openshift.png[width=65%] 
 
-* Go back to the RHDH UI and click on *Deployment* in the *Overview* tab to review your deployment status in OpenShift.
+* Go back to the https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^] and click on *Deployment* in the *Overview* tab to review your deployment status in OpenShift.
 
 image:module2/overview_deployment_click.png[width=65%] 
 
