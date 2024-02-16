@@ -50,7 +50,7 @@ image:module2/st_gitlab_info.png[width=65%]
 
 * Click on *Next Step*
 
-*Step 2* - Provide information about the GitLab location :
+*Step 2* - Provide information about the Cluster Id:
 
 * *Cluster Id*: is the OpenShift domain. Red Hat Developer Hub will use this input data to build and deploy the application.
 
@@ -137,7 +137,7 @@ image:module2/inventory_overview.png[width=100%]
 
 image:module2/inventory_source.png[width=50%] 
 
-* Go back to the https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^].
+* Go back to your inventory component on the Red Hat Developer Hub: https://developer-hub-rhdhub.%SUBDOMAIN%/catalog/default/component/inventory-app-%USERID%[Red Hat Developer Hub UI^].
 * Click on *TEKTON* tab to review your pipeline information. The pipeline will be triggered in a few seconds. After a few minutes, you will see the pipeline finished as *Succeeded*.
 
 image:module2/inventory_pipeline.png[width=100%] 
@@ -182,7 +182,7 @@ image:module2/st_gitlab_info.png[width=65%]
 
 * Click on *Next Step*
 
-*Step 2* - Provide information about the GitLab location :
+*Step 2* - Provide information about the Cluster Id:
 
 * *Cluster Id*: is the OpenShift domain. Red Hat Developer Hub will use this input data to build and deploy the application.
 
@@ -273,7 +273,9 @@ Wait until the Pipeline is green. The Pipeline will take a few minutes to comple
 
 image:module2/pipelines_openshift.png[width=65%] 
 
-* Go back to the https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^] and click on *Deployment* in the *Overview* tab to review your deployment status in OpenShift.
+* Go back to your catalog component on the Red Hat Developer Hub: https://developer-hub-rhdhub.%SUBDOMAIN%/catalog/default/component/catalog-app-%USERID%[Red Hat Developer Hub UI^].
+
+* Click on *Deployment* in the *Overview* tab to review your deployment status in OpenShift.
 
 image:module2/overview_deployment_click.png[width=65%] 
 
