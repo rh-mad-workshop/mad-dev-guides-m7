@@ -42,7 +42,6 @@ Development teams can help make sure workflows run smoothly by providing the rig
 image::intro/red_hat_developer_hub_assets.png[]
 
 * *Software Catalog*: a centralized place to keep software metadata for quick discovery and access.
-* *Components*: individual software pieces representing an application deployed through Red Hat Developer Hub.
 * *Software Templates*: will be used to create components to bring the applications into the platform according to runtimes and specific configurations.
 * *Plugins*: Plugins will allow customizations on the Red Hat Developer Hub to include new capabilities such as CI/CD and security insights.
 
