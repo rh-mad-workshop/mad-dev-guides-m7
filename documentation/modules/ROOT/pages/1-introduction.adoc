@@ -98,18 +98,21 @@ image:intro/rhdevhub_menu.png[width=45%, float=left]
 
 * *Learning Paths*: Developers and DevOps can utilize customer learning paths to learn and advance their skills.
 
-
-* Search for the Learning Path: *Developing on OpenShift*
+** Search for the *Learning Path*: *Developing on OpenShift*
+** Click on the link. 
 
 image:intro/learning_paths_explore.png[width=40%]  
 
-** Click on the link. 
-** Go back to the RHDH UI.
+* Continue exploring the menu:
+
+** Go back to the https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^]
 
 * *Tech Radar*: Company radar to understand their modernization technology landscape. This information will be customized by each company.
 
-
 image:intro/tech_radar.png[width=100%] 
+
+
+
 
 
 * *Create*: Developers can build and deploy their applications by creating a component by choosing a pre-defined template. You will spend most of your time during this module on this feature.
