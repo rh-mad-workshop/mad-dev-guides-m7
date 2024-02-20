@@ -161,11 +161,12 @@ image:intro/gitlab_st_details.png[width=40%]
 * *helm/app* folder contains all the manifests for deploy the application using *Helm Charts*. 
 * *helm/pipeline* folder contains all the manifests for build the application using https://docs.openshift.com/pipelines/latest/about/understanding-openshift-pipelines.html[*OpenShift Pipelines*^]. 
 
+
 === 1.4.3 Red Hat Developer Hub Configurations
 
-Red Hat Developer Hub is flexible and supports multiple plugins. For this workshop, we have used the current setup described in this section:
+Red Hat Developer Hub is flexible and supports multiple plugins. For this workshop, we have used the current setup described in this section:*
 
-image:module4/rhdh_architecture.png[width=50%]  
+image:intro/rhdh_architecture.png[width=50%]  
 
 *Congratulations!*
 
