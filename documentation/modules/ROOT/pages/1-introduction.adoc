@@ -1,4 +1,4 @@
-= 1. Introduction and Overview - 10 minutes
+= 1. Introduction and Overview - 15 minutes
 :imagesdir: ../assets/images
 
 == 1.1 Introduction to this module
@@ -112,23 +112,60 @@ image:intro/learning_paths_explore.png[width=40%]
 image:intro/tech_radar.png[width=100%] 
 
 
-
-
-
 * *Create*: Developers can build and deploy their applications by creating a component by choosing a pre-defined template. You will spend most of your time during this module on this feature.
 
-image:intro/software_templates_all.png[width=120%]   
-
-Each Software Template is already built based on Application features such as Quarkus, Spring Boot, and Angular. The templates are composed of everything that is required for an application to be built, deployed and managed in *OpenShift*:
-
-- Application Source code
-- Application Pipelines based on https://docs.openshift.com/pipelines/latest/about/understanding-openshift-pipelines.html[*OpenShift Pipelines*^]
-- Application Manifests using GitOps approach with https://docs.openshift.com/gitops/latest/understanding_openshift_gitops/about-redhat-openshift-gitops.html[*Red Hat OpenShift GitOps*^] and templates with *Helm Charts*.
-- https://developers.redhat.com/products/openshift-dev-spaces/overview[*Red Hat OpenShift Dev Spaces*^] as part of the developer experience to access an integrated IDE for source code changes.
+image:intro/software_templates_all.png[width=120%] 
 
 *Software Templates* are built based on best practices to create a repeatable process for developers.
 
 Find more information about the Red Hat Developer Hub https://developers.redhat.com/rhdh[here^].
+
+=== 1.4.3 Explore Software Templates
+
+Each Software Template is already built based on Application architectures and frameworks such as Quarkus, Spring Boot, and Angular. 
+The templates are composed of everything that is required for an application to be built, deployed and managed in *OpenShift*. 
+
+The Software templates are stored on our instance of GitLab created for this workshop.
+
+* Explore the templates available:
+** Access from your web browser our https://gitlab-gitlab.%SUBDOMAIN%[GitLab^] instance.
+** Click on the Software Templates repository, *rhdhub/software-templates*.
+** You will find the *showcase-templates.yaml* file. This file defines the templates shown on the Software Templates web page on Red Hat Developer Hub.
+** On the file, you will see all the defined templates per each application type:
+    - scaffolder-templates/frontend/template.yaml
+    - scaffolder-templates/spring-backend/template.yaml
+    - scaffolder-templates/quarkus-backend/template.yaml
+    - scaffolder-templates/gateway/template.yaml
+
+
+. Explore the Application Source code
+** Go back to the *rhdhub/software-templates* folder and click on *scaffolder-templates* and the application template: *quarkus-backend*.
+
+image:intro/gitlab_st_details.png[width=40%]  
+
+1 - The *template file* is the one defining your workflow when creating a component. 
+
+* Review the file. The file is composed of parameters and steps. The parameters are defined to interact with the user through the UI workflow. Specifically, when creating a component, you will be asked to:
+- *Provide information about the GitLab location*
+- *Provide information about the new component*
+- *Provide Build Information*
+* The steps will be executed once you click the *Create* button on the UI workflow.
+
+2 - The *skeleton* folder, representes the application source code. 
+
+* Explore the *catalog-info.yaml* file. This file defines the *links* shown on the component overview once the component is created. Contains a link to the *OpenShift* application, *OpenShift Pipelines* and https://developers.redhat.com/products/openshift-dev-spaces/overview[*Red Hat OpenShift Dev Spaces*^] as part of the developer experience to access an integrated IDE for source code changes.
+
+3 - The manifests are composed by:
+
+* *argocd* folder with the application definitions to build and deploy the application using GitOps approach with https://docs.openshift.com/gitops/latest/understanding_openshift_gitops/about-redhat-openshift-gitops.html[*Red Hat OpenShift GitOps*^] . 
+* *helm/app* folder contains all the manifests for deploy the application using *Helm Charts*. 
+* *helm/pipeline* folder contains all the manifests for build the application using https://docs.openshift.com/pipelines/latest/about/understanding-openshift-pipelines.html[*OpenShift Pipelines*^]. 
+
+=== 1.4.3 Red Hat Developer Hub Configurations
+
+Red Hat Developer Hub is flexible and supports multiple plugins. For this workshop, we have used the current setup described in this section:
+
+image:module4/rhdh_architecture.png[width=50%]  
 
 *Congratulations!*
 

@@ -1,4 +1,4 @@
-= 2. Application Modernization - 20 minutes
+= 2. Application Modernization - 15 minutes
 :imagesdir: ../assets/images
 
 == Goals of this lab

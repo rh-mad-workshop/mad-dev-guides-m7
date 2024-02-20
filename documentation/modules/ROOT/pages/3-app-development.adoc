@@ -1,4 +1,4 @@
-= 3. Application Development - 30 minutes
+= 3. Application Development - 25 minutes
 :imagesdir: ../assets/images
 
 == Goals of this lab
