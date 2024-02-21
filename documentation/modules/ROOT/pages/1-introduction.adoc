@@ -113,6 +113,8 @@ image:intro/learning_paths_explore.png[width=40%]
 
 ** Go back to the https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^]
 
+* *Clusters*: will show your managed clusters. At this time, we are not using https://www.redhat.com/en/technologies/management/advanced-cluster-management[Red Hat Advanced Cluster Management for Kubernetes^] for cluster management. You will see a message: *Could not fetch clusters from Hub*.
+
 * *Tech Radar*: Company radar to understand their modernization technology landscape. This information will be customized by each company.
 
 image:intro/tech_radar.png[width=100%] 
