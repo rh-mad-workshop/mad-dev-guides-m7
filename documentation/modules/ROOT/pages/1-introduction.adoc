@@ -22,7 +22,7 @@ Red Hat Developer Hub can build and deploy applications on the hybrid cloud supp
 * Reducing technical debt through modernization: Disperse and complex technologies required to adopt containers, Kubernetes, cloud, CI/CD
 * Remain competitive: How to adopt best practices in each stage of the application delivery lifecycle to allow developers to focus on innovation.
 * Remain competitive: Feature development competes with modernization efforts reducing the opportunity for modernization.
-Time to market: Lacking a self-service developer experience increases the time spent modernizing applications.
+* Time to market: Lacking a self-service developer experience increases the time spent modernizing applications.
 
 === 1.2.3 Current Developer Challenges
 * Learning multiple technologies besides their software tools such as CI/CD, Security, Containers, Cloud.
@@ -41,9 +41,15 @@ Development teams can help make sure workflows run smoothly by providing the rig
 
 image::intro/red_hat_developer_hub_assets.png[]
 
-* *Software Catalog*: a centralized place to keep software metadata for quick discovery and access.
-* *Software Templates*: will be used to create components to bring the applications into the platform according to runtimes and specific configurations.
-* *Plugins*: Plugins will allow customizations on the Red Hat Developer Hub to include new capabilities such as CI/CD and security insights.
+1- *Software Catalog*: a centralized location to keep software metadata for quick discovery and access. In this workshop, you can see all the catalogs available from all users.
+
+2- *Tech Docs*: a centralized place for your developer's documentation. Customers can add their own process and technology documentation for easy and quick access.
+
+3- *Plugins*: Plugins will allow customizations on the Red Hat Developer Hub to include new capabilities such as CI/CD and security insights.
+
+4- *Software Templates*: will be used to create components to bring the applications into the platform according to runtimes and specific configurations.
+
+5- *Search*: access all the components created quickly by using the Search functionality. 
 
 === 1.4 Explore Red Hat Developer Hub
 
@@ -69,7 +75,7 @@ image::intro/welcome.png[]
 
 On the main screen, you will see the *Quick Access* section:
 
-*Note*: The following links are pre-defined and can be configured and updated.
+*Note*: The following links are pre-defined and can be configured and updated. 
 
 * *Community*: resources to connect with the community from websites, blogs, Slack, and videos.
 
@@ -128,10 +134,10 @@ The templates are composed of everything that is required for an application to 
 The Software templates are stored on our instance of GitLab created for this workshop.
 
 * Explore the templates available:
-** Access from your web browser our https://gitlab-gitlab.%SUBDOMAIN%[GitLab^] instance.
-** Click on the Software Templates repository, *rhdhub/software-templates*.
-** You will find the *showcase-templates.yaml* file. This file defines the templates shown on the Software Templates web page on Red Hat Developer Hub.
-** On the file, you will see all the defined templates per each application type:
+** Access from your web browser our https://gitlab-gitlab.%SUBDOMAIN%/rhdhub/software-templates[GitLab^] instance.
+** You are on the Software Templates repository, *rhdhub/software-templates*.
+** Click on the *showcase-templates.yaml* file. This file defines the templates shown on the Software Templates web page on Red Hat Developer Hub.
+** In this file, you will see all the defined templates per each application type:
     - scaffolder-templates/frontend/template.yaml
     - scaffolder-templates/spring-backend/template.yaml
     - scaffolder-templates/quarkus-backend/template.yaml
@@ -139,7 +145,8 @@ The Software templates are stored on our instance of GitLab created for this wor
 
 
 * Explore the Application Source code:
-** Go back to the *rhdhub/software-templates* folder and click on *scaffolder-templates* and review the *quarkus-backend* software template.
+** Go back to the *rhdhub/software-templates* folder
+** Click on *scaffolder-templates* and then click on the *quarkus-backend* folder to explore the software templates for the quarkus application.
 
 image:intro/gitlab_st_details.png[width=30%]  
 
@@ -152,20 +159,20 @@ image:intro/gitlab_st_details.png[width=30%]
 - *Provide Build Information*
 * The steps will be executed once you click the *Create* button on the UI workflow.
 
-2 - The *skeleton* folder, represents the application source code. 
+2 - The *skeleton* folder represents the application source code. 
 
-* Explore the *catalog-info.yaml* file. This file defines the *links* shown on the component overview once the component is created. Contains a link to the *OpenShift* application, *OpenShift Pipelines* and https://developers.redhat.com/products/openshift-dev-spaces/overview[*Red Hat OpenShift Dev Spaces*^] as part of the developer experience to access an integrated IDE for source code changes.
+* Within the folder you will find the *catalog-info.yaml* file. This file defines the *links* shown on the component overview once the component is created. Contains a link to the *OpenShift* application, *OpenShift Pipelines* and https://developers.redhat.com/products/openshift-dev-spaces/overview[*Red Hat OpenShift Dev Spaces*^] as part of the developer experience to access an integrated IDE for source code changes.
 
-3 - The manifests are composed by:
+3 - The application manifests are composed by:
 
 * *argocd* folder with the application definitions to build and deploy the application using GitOps approach with https://docs.openshift.com/gitops/latest/understanding_openshift_gitops/about-redhat-openshift-gitops.html[*Red Hat OpenShift GitOps*^] . 
-* *helm/app* folder contains all the manifests for deploy the application using *Helm Charts*. 
-* *helm/pipeline* folder contains all the manifests for build the application using https://docs.openshift.com/pipelines/latest/about/understanding-openshift-pipelines.html[*OpenShift Pipelines*^]. 
+* *helm/app* folder contains all the manifests to deploy the application using *Helm Charts*. 
+* *helm/pipeline* folder contains all the manifests to build the application using https://docs.openshift.com/pipelines/latest/about/understanding-openshift-pipelines.html[*OpenShift Pipelines*^]. 
 
 
-=== 1.4.3 Red Hat Developer Hub Configurations
+=== 1.4.4 Red Hat Developer Hub Configurations
 
-Red Hat Developer Hub is flexible and supports multiple plugins. For this workshop, we have used the current setup described in this section:
+Red Hat Developer Hub is flexible and supports multiple plugins. The following diagram describes how the components described interact with each other.
 
 image:intro/rhdh_architecture.png[width=50%]  
 
