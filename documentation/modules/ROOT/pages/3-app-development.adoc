@@ -322,7 +322,7 @@ image::module3/frontend_devspaces.png[width=80%]
 
 image::module3/devspaces_login.png[width=80%]
 
-* Login with your OpenShift credential in the Red Hat Single Sign On (RHSSO) screen:
+* Login with your OpenShift credential in the Red Hat Single Sign-On (RH-SSO) screen:
 
  ** *Username*: `%USERID%`
  ** *Password*: `{openshift-password}`
@@ -357,7 +357,7 @@ image::module3/devspaces_view.png[width=80%]
 
 4.7 Expand the `frontend-app-%USERID%` to find for the file: `header.html` as shown in the picture below.
 
-image::module3/file_change.png[width=80%]
+image::module3/file_change.png[width=100%]
 
 
 4.8 Update the *Title* in *line 12*, adding your preferred city. You don't need to save the file because the Red Hat OpenShift Dev Spaces automatically saves the changes while you're updating code.
