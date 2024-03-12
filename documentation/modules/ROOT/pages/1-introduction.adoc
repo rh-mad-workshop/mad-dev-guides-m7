@@ -71,7 +71,7 @@ image::intro/authentication.png[]
 
 *Welcome to Red Hat Developer Hub!*
 
-image::intro/welcome.png[]
+image::intro/welcome.png[width=120%]
 
 On the main screen, you will see the *Quick Access* section:
 
@@ -94,7 +94,7 @@ At your left, the *Red Hat Developer Hub* menu:
 *Navigate each of the menu items to explore the different solutions:*
 
 
-image:intro/rhdevhub_menu.png[width=45%, float=left]  
+image:intro/rhdevhub_menu.png[width=90%, float=left]  
 
 * *Catalog* is the Software Catalog available to build and deploy applications. 
 
