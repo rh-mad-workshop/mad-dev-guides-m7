@@ -118,7 +118,7 @@ image:module3/st_component_review_gateway.png[width=80%]
 
 * With all your activities in green, click *Open Component in catalog*. 
 
-image:module3/task_activity.png[width=65%]  
+image:module3/task_activity.png[width=100%]  
 
 * RHDH will open a new tab with the component information. 
 
@@ -141,7 +141,9 @@ At your right the application details is available.
 image:module3/gateway_deployment.png[width=80%] 
 
 * Click on *KUBERNETES* to review your application status in the OpenShift cluster.
-You might find the pods still not ready. Wait a few seconds to see everything in green.
+You might find the pods still not ready. Wait a few seconds to see everything in green. 
+
+*Note*: *1 pod with errors* indicates that a pod has failed as it shows on the *Error Reporting* section. The issue was resolved and now all the pods are in green.
 
 image:module3/gateway_yourclusters.png[width=100%] 
 
@@ -258,7 +260,7 @@ image:module3/st_component_review_frontend.png[width=100%]
 
 * With all your activities in green, click *Open Component in catalog*. 
 
-image:module3/task_activity.png[width=65%]  
+image:module3/task_activity.png[width=100%]  
 
 * RHDH will open a new tab with the component information. 
 
@@ -298,7 +300,7 @@ image::module3/final_web.png[width=100%]
 
 As a developer, you need to work on many feature requests or issues. In this use case, you will fix a problem with the title in the front-end application. Red Hat Developer Hub is a single pane of glass that allows you to access all the tools and information for your app from one single place. 
 
-1. Go back to your frontend component on the Red Hat Developer Hub: https://developer-hub-rhdhub.%SUBDOMAIN%/catalog/default/component/frontend-app-%USERID%[Red Hat Developer Hub UI^].
+1. Go back to your frontend component on the Red Hat Developer Hub: https://developer-hub-backstage-rhdhub.%SUBDOMAIN%/catalog/default/component/frontend-app-%USERID%[Red Hat Developer Hub UI^].
 2. Look at the GitLab issues by clicking on *ISSUES*. 
 3. You will be able to see any GitHub issues associated with the application. 
 
@@ -310,7 +312,7 @@ image:module3/frontend_issues.png[width=100%]
 
 image::module3/frontend_issue_desc.png[width=100%]
 
-* Go back to your frontend component on the Red Hat Developer Hub: https://developer-hub-rhdhub.%SUBDOMAIN%/catalog/default/component/frontend-app-%USERID%[Red Hat Developer Hub UI^].
+* Go back to your frontend component on the Red Hat Developer Hub: https://developer-hub-backstage-rhdhub.%SUBDOMAIN%/catalog/default/component/frontend-app-%USERID%[Red Hat Developer Hub UI^].
 
 3. From the *OVERVIEW* tab click on *OpenShift Dev Spaces (VS Code)* to make the necessary source code changes.
 
@@ -393,7 +395,7 @@ image::module3/dev_confirmed.png[width=100%]
 
 Your source code changes triggered a new pipeline to update the version of the frontend application.
 
-* Go back to your frontend component on the Red Hat Developer Hub: https://developer-hub-rhdhub.%SUBDOMAIN%/catalog/default/component/frontend-app-%USERID%[Red Hat Developer Hub UI^].
+* Go back to your frontend component on the Red Hat Developer Hub: https://developer-hub-backstage-rhdhub.%SUBDOMAIN%/catalog/default/component/frontend-app-%USERID%[Red Hat Developer Hub UI^].
 
 * Explore the pipelines by clicking on the *TEKTON*.
 
@@ -409,7 +411,7 @@ image::module3/final_web.png[width=100%]
 
 ## Bonus Point: Explore applications dependencies and APIs
 
-* Go back to your frontend component on the Red Hat Developer Hub: https://developer-hub-rhdhub.%SUBDOMAIN%/catalog/default/component/frontend-app-%USERID%[Red Hat Developer Hub UI^].
+* Go back to your frontend component on the Red Hat Developer Hub: https://developer-hub-backstage-rhdhub.%SUBDOMAIN%/catalog/default/component/frontend-app-%USERID%[Red Hat Developer Hub UI^].
 
 * Click on the *Overview* tab. Next, click on the *workshop-system-rhdhub-%USERID%* section.
 

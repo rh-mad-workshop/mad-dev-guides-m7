@@ -57,7 +57,7 @@ image::intro/red_hat_developer_hub_assets.png[]
 
 Red Hat Developer Hub has already been installed and configured in the workshop environment.
 
-To get started, access https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^]
+To get started, access https://developer-hub-backstage-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^]
 
 
 Red Hat Developer Hub is already configured with https://access.redhat.com/products/red-hat-single-sign-on/[Red Hat Single Sign On^]. Log in with your OpenShift credentials:
@@ -100,20 +100,17 @@ image:intro/rhdevhub_menu.png[width=45%, float=left]
 
 * *APIs* available for developers to consume.
 
-* *Docs*:  customer documentation that developers and DevOps can access as part of the company guidelines and best practices.
-
 * *Learning Paths*: Developers and DevOps can utilize customer learning paths to learn and advance their skills.
 
-** Search for the *Learning Path*: *Developing on OpenShift*
+** Search for the *Learning Path*: *Developing with Quarkus*
 ** Click on the link. 
 
 image:intro/learning_paths_explore.png[width=40%]  
 
 * Continue exploring the menu:
 
-** Go back to the https://developer-hub-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^]
+** Go back to the https://developer-hub-backstage-rhdhub.%SUBDOMAIN%[Red Hat Developer Hub UI^]
 
-* *Clusters*: will show your managed clusters. At this time, we are not using https://www.redhat.com/en/technologies/management/advanced-cluster-management[Red Hat Advanced Cluster Management for Kubernetes^] for cluster management. You will see a message: *Could not fetch clusters from Hub*.
 
 * *Tech Radar*: Company radar to understand their modernization technology landscape. This information will be customized by each company.
 

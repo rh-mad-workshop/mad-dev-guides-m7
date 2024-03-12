@@ -125,7 +125,7 @@ image:module2/st_component_review_quarkus.png[width=80%]
 
 * With all your activities in green, click *Open Component in catalog*. 
 
-image:module2/task_activity.png[width=50%]  
+image:module2/task_activity.png[width=100%]  
 
 * RHDH will open a new tab with the component information. 
 
@@ -137,7 +137,7 @@ image:module2/inventory_overview.png[width=100%]
 
 image:module2/inventory_source.png[width=50%] 
 
-* Go back to your inventory component on the Red Hat Developer Hub: https://developer-hub-rhdhub.%SUBDOMAIN%/catalog/default/component/inventory-app-%USERID%[Red Hat Developer Hub UI^].
+* Go back to your inventory component on the Red Hat Developer Hub: https://developer-hub-backstage-rhdhub.%SUBDOMAIN%/catalog/default/component/inventory-app-%USERID%[Red Hat Developer Hub UI^].
 * Click on *TEKTON* tab to review your pipeline information. The pipeline will be triggered in a few seconds. After a few minutes, you will see the pipeline finished as *Succeeded*.
 
 image:module2/inventory_pipeline.png[width=100%] 
@@ -257,7 +257,7 @@ image:module2/st_component_review_spring.png[width=80%]
 
 * With all your activities in green, click *Open Component in catalog*. 
 
-image:module2/task_activity.png[width=65%]   
+image:module2/task_activity.png[width=100%]   
 
 * RHDH will open a new tab with the component information. 
 
@@ -273,7 +273,7 @@ Wait until the Pipeline is green. The Pipeline will take a few minutes to comple
 
 image:module2/pipelines_openshift.png[width=65%] 
 
-* Go back to your catalog component on the Red Hat Developer Hub: https://developer-hub-rhdhub.%SUBDOMAIN%/catalog/default/component/catalog-app-%USERID%[Red Hat Developer Hub UI^].
+* Go back to your catalog component on the Red Hat Developer Hub: https://developer-hub-backstage-rhdhub.%SUBDOMAIN%/catalog/default/component/catalog-app-%USERID%[Red Hat Developer Hub UI^].
 
 * Click on *Deployment* in the *Overview* tab to review your deployment status in OpenShift.
 
