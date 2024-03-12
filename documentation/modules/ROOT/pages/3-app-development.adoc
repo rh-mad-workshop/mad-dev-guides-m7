@@ -103,9 +103,9 @@ gateway-app-%USERID%
 
 image:module3/st_component_componentid_gateway.png[width=65%]  
 
-* Click on *Next Step*.
+* Click on *Review*.
 
-* *Review and Create*.
+* Review the data.
 
 *Sample data*
 
@@ -244,9 +244,9 @@ frontend-app-%USERID%
 
 image:module3/st_component_componentid_frontend.png[width=65%]  
 
-* Click on *Next Step*.
+* Click on *Review*.
 
-* *Review and Create*.
+* Review the data.
 
 *Sample data*
 

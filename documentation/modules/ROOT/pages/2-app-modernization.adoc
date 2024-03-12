@@ -109,9 +109,9 @@ inventory-app-%USERID%
 
 image:module2/st_component_componentid_quarkus.png[width=40%]  
 
-* Click on *Next Step*.
+* Click on *Review*.
 
-* *Review and Create*.
+* Review the data.
 
 *Sample data*
 
@@ -241,9 +241,9 @@ catalog-app-%USERID%
 
 image:module2/st_component_componentid_spring.png[width=50%]  
 
-* Click on *Next Step*.
+* Click on *Review*.
 
-* *Review and Create*.
+* Review the data.
 
 *Sample data*
 
