@@ -300,7 +300,7 @@ As a developer, you need to work on many feature requests or issues. In this use
 
 1. Go back to your frontend component on the Red Hat Developer Hub: https://developer-hub-rhdhub.%SUBDOMAIN%/catalog/default/component/frontend-app-%USERID%[Red Hat Developer Hub UI^].
 2. Look at the GitLab issues by clicking on *ISSUES*. 
-3. You will be able to see any GitHub issues associated with the application. 
+3. You will be able to see any GitLab issues associated with the application. 
 
 There is an issue to be fixed:
 
