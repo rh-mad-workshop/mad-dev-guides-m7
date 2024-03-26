@@ -42,7 +42,7 @@ image:module3/st_gitlab_info.png[width=65%]
 
 * *Repo Group*: is the GitLab organization already configured. Red Hat Developer Hub will use this input data to upload the source repository and manifests.
 
-* Click on *Next Step*
+* Click on *Next*
 
 *Step 2* - Provide information about the Cluster Id :
 
@@ -83,7 +83,7 @@ image:module3/st_component_namespace.png[width=40%]
 
 image:module3/st_component_owner.png[width=40%]  
 
-* Click on *Next Step*.
+* Click on *Next*.
 
 *Step 3* - Provide Build information:
 
@@ -126,7 +126,7 @@ image:module3/task_activity.png[width=100%]
 
 image:module3/gateway_overview.png[width=100%]  
 
-* Click on *TEKTON* to review your pipeline information.
+* Click on *CI* to review your pipeline information.
 The pipeline will be triggered in a few seconds. After a few minutes, you will see the pipeline finished as *Succeeded*.
 
 image:module3/gateway_pipelines.png[width=100%] 
@@ -140,7 +140,7 @@ At your right the application details is available.
 
 image:module3/gateway_deployment.png[width=80%] 
 
-* Click on *KUBERNETES* to review your application status in the OpenShift cluster.
+* Click on *KUBERNETES* to review your application status.
 You might find the pods still not ready. Wait a few seconds to see everything in green. 
 
 *Note*: *1 pod with errors* indicates that a pod has failed as it shows on the *Error Reporting* section. The issue was resolved and now all the pods are in green.
@@ -183,7 +183,7 @@ image:module3/st_gitlab_info.png[width=65%]
 
 * *Repo Group*: is the GitLab organization already configured. Red Hat Developer Hub will use this input data to upload the source repository and manifests.
 
-* Click on *Next Step*.
+* Click on *Next*.
 
 *Step 2* - Provide information about the Cluster Id.
 
@@ -224,7 +224,7 @@ image:module3/st_component_namespace.png[width=40%]
 
 image:module3/st_component_owner.png[width=40%]  
 
-* Click on *Next Step*.
+* Click on *Next*.
 
 *Step 3* - Provide Build information.
 
@@ -268,7 +268,7 @@ image:module3/task_activity.png[width=100%]
 
 image:module3/frontend_overview.png[width=100%] 
 
-* Click on *TEKTON* to review your pipeline information.
+* Click on *CI* to review your pipeline information.
 The pipeline will be triggered in a few seconds. After a few minutes, you will see the pipeline finished as *Succeeded*.
 
 image:module3/frontend_pipeline.png[width=100%] 
@@ -294,7 +294,7 @@ image:module3/frontend_apiconsume.png[width=100%]
 
 ** Click on the https://frontend-app-%USERID%-rhdhub-%USERID%.%SUBDOMAIN%/[Cool Store web page^]
 
-image::module3/final_web.png[width=100%]
+image::module3/ui_web.png[width=100%]
 
 === 3.5 Fix an issue reported about the application
 
@@ -397,7 +397,7 @@ Your source code changes triggered a new pipeline to update the version of the f
 
 * Go back to your frontend component on the Red Hat Developer Hub: https://developer-hub-backstage-rhdhub.%SUBDOMAIN%/catalog/default/component/frontend-app-%USERID%[Red Hat Developer Hub UI^].
 
-* Explore the pipelines by clicking on the *TEKTON*.
+* Explore the pipelines by clicking on the *CI*.
 
 image::module3/frontend_newpipeline.png[width=100%]
 
@@ -427,7 +427,7 @@ image::module3/workshop_detail.png[width=100%]
 
 ## Congratulations!
 
-You have successfully built the Cool Store application and learn the benefits of Red Hat Developer Hub with Software Templates reduce developer cognitive load by providing pre-architected and supported approaches to building and deploying a service or software component without having to learn all the details of the technology used to create it.
+You have successfully built the Cool Store application and learned the benefits of Red Hat Developer Hub with Software Templates reduce developer cognitive load by providing pre-architected and supported approaches to building and deploying a service or software component without having to learn all the details of the technology used to create it.
 
 
 

@@ -48,7 +48,7 @@ image:module2/st_gitlab_info.png[width=65%]
 
 * *Repo Group*: is the GitLab organization already configured. Red Hat Developer Hub will use this input data to upload the source repository and manifests.
 
-* Click on *Next Step*
+* Click on *Next*
 
 *Step 2* - Provide information about the Cluster Id:
 
@@ -89,7 +89,7 @@ image:module2/st_component_namespace.png[width=40%]
 
 image:module2/st_component_owner.png[width=40%]  
 
-* Click on *Next Step*
+* Click on *Next*
 
 *Step 3* - Provide Build information:
 
@@ -138,7 +138,7 @@ image:module2/inventory_overview.png[width=100%]
 image:module2/inventory_source.png[width=50%] 
 
 * Go back to your inventory component on the Red Hat Developer Hub: https://developer-hub-backstage-rhdhub.%SUBDOMAIN%/catalog/default/component/inventory-app-%USERID%[Red Hat Developer Hub UI^].
-* Click on *TEKTON* tab to review your pipeline information. The pipeline will be triggered in a few seconds. After a few minutes, you will see the pipeline finished as *Succeeded*.
+* Click on *CI* tab to review your pipeline information. The pipeline will be triggered in a few seconds. After a few minutes, you will see the pipeline finished as *Succeeded*.
 
 image:module2/inventory_pipeline.png[width=100%] 
 
@@ -180,7 +180,7 @@ image:module2/st_gitlab_info.png[width=65%]
 
 * *Repo Group*: is the GitLab organization already configured. Red Hat Developer Hub will use this input data to upload the source repository and manifests.
 
-* Click on *Next Step*
+* Click on *Next*
 
 *Step 2* - Provide information about the Cluster Id:
 
@@ -221,7 +221,7 @@ image:module2/st_component_namespace.png[width=40%]
 
 image:module2/st_component_owner.png[width=40%]  
 
-Click on *Next Step*.
+Click on *Next*.
 
 *Step 3* - Provide Build information:
 
@@ -266,6 +266,8 @@ image:module2/task_activity.png[width=100%]
 image:module2/catalog_overview.png[width=100%] 
 
 * In the *Overview* tab, click on *Pipelines* to review the Pipelines details in OpenShift. 
+
+*Note*: If you do not see the Pipelines. Click on the link again to ensure you are redirected to the OpenShift Pipelines details.
 
 image:module2/overview_pipelines_click.png[width=65%] 
 
